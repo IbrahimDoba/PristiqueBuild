@@ -8,8 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#7856ff"
+        ftbg:" #030303",
+        bg: "#F5F6FA",
+        txt: "#0D0E11",
+        pri: "#5663F0",
+        sec: "#E9E9E9",
+        acc: "#4A59FC",
       },
+      screens: {
+        "max-lg": {max : "1200px"},
+        "max-md" : {max: "680px"},
+      }
     },
   },
   plugins: [],
