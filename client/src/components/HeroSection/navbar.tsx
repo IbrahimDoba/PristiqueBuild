@@ -1,24 +1,88 @@
-import React from "react";
+'use client';
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import MenuButton from '../MenuButton/MenuButton';
 
 const Navbar = () => {
-  return (
-    <nav className=" fixed top-0 h-[70px] bg-bg z-30 text-txt w-full flex justify-center m-0">
-      <div className="flex w-[80%] items-center justify-center">
-        <div className="flex flex-1 justify-start items-center  ">
-          <h2>PRESTIQ</h2>
-          <h2 className="text-pri pl-2">BUILDS</h2>
-        </div>
-        <div className="flex flex-1 justify-between items-center text-md pr-10">
-          <p>Home</p>
-          <p>Deisgns</p>
-          <p>About us</p>
+  const [isOpen, setIsOpen] = useState(false);
+  const [stickToTop, setStickToTop] = useState(false);
 
-          <button className=" w-[150px] text-txt bg-pri py-2 px-4 rounded text-sm duration-200 hover:bg-transparent border border-pri">
-            Contact us
-          </button>
-        </div>
+  const toggleMenu = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//        // Check how many pixels user scrolled from the top and stick the navbar to the top
+//        if (window.scrollY > 60) {
+//           setStickToTop(true);
+//        } else {
+//           setStickToTop(false);
+//        }
+//     };
+
+//     // Listen for scroll when the component mounts
+//     window.addEventListener('scroll', handleScroll);
+
+//     // Remove the event listener when the component unmounts
+//     return () => {
+//        window.removeEventListener('scroll', handleScroll);
+//     };
+//  }, []);
+
+  return (
+    <header className={`w-full grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-6 md:px-8 lg:px-20 ${stickToTop && 'sticky top-0 backdrop-blur-2xl z-40'}`}>
+      <div>
+        <Link href='#top'>
+          <h1 className='text-pri flex items-center gap-1 font-bold text-xl'>
+            PRESTIQ
+            <span className='text-txt text-sm'>BUILDS</span>
+          </h1>
+        </Link>
       </div>
-    </nav>
+      <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
+      <nav>
+        <ul
+          id='navbar-menu'
+          className={`max-md:min-h-screen max-md:absolute flex flex-col gap-6 min-w-full py-20 px-8 top-0 right-0 z-20 text-main bg-black/80 backdrop-blur-xl md:flex-row md:justify-evenly md:gap-10 md:bg-transparent md:p-0 transition duration-500 ${
+            isOpen ? 'max-md:tranxlate-x-0' : 'max-md:-translate-x-full'
+          }`}
+        >
+          <li className='hover:text-pri transition duration-300'>
+            <Link
+              href='#top'
+              className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
+            >
+              Home
+            </Link>
+          </li>
+          <li className='hover:text-pri transition duration-300'>
+            <Link
+              href='#designs'
+              className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
+            >
+              Designs
+            </Link>
+          </li>
+          <li className='hover:text-pri transition duration-300'>
+            <Link
+              href='#about'
+              className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
+            >
+              About us
+            </Link>
+          </li>
+          <li className='hover:text-pri transition duration-300'>
+            <Link
+              href='#contact'
+              className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

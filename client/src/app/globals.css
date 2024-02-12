@@ -3,3 +3,15 @@
 @tailwind utilities;
 
 /* base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .no-scroll {
+    overflow: hidden;
+  }
+}
+
