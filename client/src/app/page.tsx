@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <div className=" bg-bg  flex flex-col justify-center items-center">
       <Navbar />
-      <SliderPage/>
       <Homepage/>
+      <SliderPage/>
       <Designs/>
       <AboutUsSection />
       <Footer/>

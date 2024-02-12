@@ -4,7 +4,7 @@ import meeting from "../../../assets/men mount.jpg";
 
 const AboutUsSection = () => {
   return (
-    <div className="w-[100%] h-screen bg-bg flex justify-center items-center max-lg:flex-col max-lg:h-auto">
+    <div id='about' className="w-[100%] h-screen bg-bg flex justify-center items-center max-lg:flex-col max-lg:h-auto">
       <div className="flex  flex-1">
         <Image src={meeting} alt="men mount" />
       </div>

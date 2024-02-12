@@ -8,18 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ftbg:" #2b2a2e",
-        bg: "#F5F6FA",
-        txt: "#0D0E11",
-        pri: "#5663F0",
-        sec: "#E9E9E9",
-        acc: "#4A59FC",
+        ftbg: ' #2b2a2e',
+        bg: '#F5F6FA',
+        txt: '#0D0E11',
+        pri: '#5663F0',
+        sec: '#E9E9E9',
+        acc: '#4A59FC',
       },
       screens: {
-        "max-lg": {max : "1200px"},
-        "max-md" : {max: "680px"},
-      }
+        'max-lg': { max: '1200px' },
+        'max-md': { max: '680px' },
+        md: '681px',
+      },
     },
   },
   plugins: [],
-}
+};

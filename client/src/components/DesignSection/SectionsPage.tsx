@@ -9,7 +9,7 @@ import img4 from "../../../assets/fox-modular-family-32.jpg";
 
 const SectionsPage = () => {
   return (
-    <div className="w-[100%] bg-sec  flex justify-center items-center">
+    <div id="designs" className="w-[100%] bg-sec  flex justify-center items-center">
     <div className="flex w-[80%] h-auto my-[8%] flex-col justify-start items-start bg-sec text-txt">
       <div className="mb-10">
         {" "}
