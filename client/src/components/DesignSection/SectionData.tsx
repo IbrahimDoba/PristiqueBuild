@@ -1,7 +1,7 @@
-import img1 from "../../../assets/fox-modular-family-2.jpg";
-import img2 from "../../../assets/fox-modular-family-4.jpg";
-import img3 from "../../../assets/fox-modular-family-12.jpg";
-import img4 from "../../../assets/fox-modular-family-32.jpg";
+import img1 from "../../../assets/slider1.jpeg";
+import img2 from "../../../assets/card2.jpg";
+import img3 from "../../../assets/card7.jpg";
+import img4 from "../../../assets/flats1.jpg";
 import { StaticImageData } from "next/image";
 
 export interface PropsType {

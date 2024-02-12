@@ -1,6 +1,6 @@
-import img1 from "../../../assets/build1.jpg";
-import img2 from "../../../assets/build2.jpg";
-import img3 from "../../../assets/build3.jpg";
+import img1 from "../../../assets/slider 2.jpg";
+import img2 from "../../../assets/card1.jpg";
+import img3 from "../../../assets/slider3.jpg";
 
 import { StaticImageData } from "next/image";
 
@@ -15,21 +15,21 @@ export const SliderData = [
   {
     id: 1,
     image: img1,
-    title: "Pre Modular",
-    text: "Build Outside the box",
+    title: "Build Outside The Box",
+    text: "With every detail thought-fully considererd",
   },
   {
     id: 2,
     image: img2,
-    title: "Transformables",
-    text: "Build Outside the box",
+    title: "Award-winning designs",
+    text: "Available in large range of types and sizes",
 
   },
   {
     id: 3,
     image: img3,
-    title: "PREISTIGE",
-    text: "Build Outside the box",
+    title: "Morden Modular Homes",
+    text: "Redefining what is possible in modular constructon",
 
   },
 ];

@@ -9,10 +9,11 @@ import img4 from "../../../assets/fox-modular-family-32.jpg";
 
 const SectionsPage = () => {
   return (
-    <div className="flex w-[80%] h-auto my-[8%] flex-col justify-start items-start  text-txt">
+    <div className="w-[100%] bg-sec  flex justify-center items-center">
+    <div className="flex w-[80%] h-auto my-[8%] flex-col justify-start items-start bg-sec text-txt">
       <div className="mb-10">
         {" "}
-        <h1 className=" font-semibold text-4xl text-start">The Pristique Builds</h1>
+        <h1 className=" font-semibold text-4xl text-start">The Pristiq Builds</h1>
       </div>
       <div className="flex w-full justify-between items-center flex-wrap max-md:justify-center   ">
         {sectionsData.map((section) => (
@@ -26,6 +27,7 @@ const SectionsPage = () => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };
