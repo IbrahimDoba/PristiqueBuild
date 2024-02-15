@@ -11,31 +11,33 @@ const Navbar = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//        // Check how many pixels user scrolled from the top and stick the navbar to the top
-//        if (window.scrollY > 60) {
-//           setStickToTop(true);
-//        } else {
-//           setStickToTop(false);
-//        }
-//     };
+  useEffect(() => {
+    const handleScroll = () => {
+       // Check how many pixels user scrolled from the top and stick the navbar to the top
+       if (window.scrollY > 60) {
+          setStickToTop(true);
+       } else {
+          setStickToTop(false);
+       }
+    };
 
-//     // Listen for scroll when the component mounts
-//     window.addEventListener('scroll', handleScroll);
+    // Listen for scroll when the component mounts
+    window.addEventListener('scroll', handleScroll);
 
-//     // Remove the event listener when the component unmounts
-//     return () => {
-//        window.removeEventListener('scroll', handleScroll);
-//     };
-//  }, []);
+    // Remove the event listener when the component unmounts
+    return () => {
+       window.removeEventListener('scroll', handleScroll);
+    };
+ }, []);
 
   return (
-    <header className={`w-full grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-6 md:px-8 lg:px-20 ${stickToTop && 'sticky top-0 backdrop-blur-2xl z-40'}`}>
+    <div className={`flex w-full justify-center items-center ${stickToTop && 'sticky top-0 backdrop-blur-2xl z-40'}`}>
+    <header className={`w-[85%] grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-6 md:px-8 lg:px-20 `}>
       <div>
+      
         <Link href='#top'>
           <h1 className='text-pri flex items-center gap-1 font-bold text-xl'>
-            PRESTIQ
+            PRISTIQ
             <span className='text-txt text-sm'>BUILDS</span>
           </h1>
         </Link>
@@ -82,7 +84,9 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      
     </header>
+    </div>
   );
 };
 
