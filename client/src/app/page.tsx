@@ -13,9 +13,14 @@ export default function Home() {
       <div className=" bg-bg  flex flex-col justify-center items-center">
       <Navbar />
       <Homepage/>
-      <SliderPage/>
-      <Designs/>
+      {/* our core values
+      futurestic designs (vr) */}
+      <SliderPage/>       {/* // our services */}
+
+      <Designs/>       {/* // our process */}
+
       <AboutUsSection />
+      {/* // contact */}
       <Footer/>
       </div>
     </main>
