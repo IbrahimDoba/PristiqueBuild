@@ -1,0 +1,32 @@
+{
+  "designs": [
+    {
+      "id": 1,
+      "image": "/assets/slider1.jpg",
+      "title": "Pre Modular",
+      "text": "Our Fox Modular homes and commercial buildings are available in a large range of styles and sizes, and are built to last.",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "image": "/assets/card2.jpg",
+      "title": "Transformables",
+      "text": "Our Fox Modular homes and commercial buildings are available in a large range of styles and sizes, and are built to last.",
+      "link": ""
+    },
+    {
+      "id": 3,
+      "image": "/assets/card7.jpg",
+      "title": "PREISTIGE",
+      "text": "Our Fox Modular homes and commercial buildings are available in a large range of styles and sizes, and are built to last.",
+      "link": ""
+    },
+    {
+      "id": 4,
+      "image": "/assets/flats1.jpg",
+      "title": "The Flats",
+      "text": "Our Fox Modular homes and commercial buildings are available in a large range of styles and sizes, and are built to last.",
+      "link": ""
+    }
+  ]
+}

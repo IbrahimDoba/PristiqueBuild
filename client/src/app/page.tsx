@@ -1,28 +1,17 @@
-import AboutUsSection from "@/components/AboutUs/AboutUsSection";
-import Designs from "@/components/DesignSection/SectionsPage";
-import Footer from "@/components/Footer/Footer";
-import Homepage from "@/components/HeroSection/homepage";
-import Navbar from "@/components/HeroSection/navbar";
-import SliderPage from "@/components/SliderSection/SliderPage";
-import Image from "next/image";
-import Link from "next/link";
+import Designs from '@/components/DesignSection/SectionsPage';
+import Homepage from '@/components/HeroSection/hero';
+import SliderPage from '@/components/SliderSection/SliderPage';
 
 export default function Home() {
   return (
-    <main>
-      <div className=" bg-bg  flex flex-col justify-center items-center">
-      <Navbar />
-      <Homepage/>
-      {/* our core values
-      futurestic designs (vr) */}
-      <SliderPage/>       {/* // our services */}
-
-      <Designs/>       {/* // our process */}
-
-      <AboutUsSection />
-      {/* // contact */}
-      <Footer/>
-      </div>
-    </main>
+    <>
+      <main className=' bg-bg  flex flex-col justify-center items-center'>
+        <Homepage />
+        {/* our core values futurestic designs (vr) */}
+        <SliderPage /> {/* // our services */}
+        <Designs /> {/* // our process */}
+        {/* // contact */}
+      </main>
+    </>
   );
 }

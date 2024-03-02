@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import img1 from "../../../assets/logo2.jpg";
 
-const Homepage = () => {
+const Hero = () => {
   return (
     <div className="  w-[100%] h-screen flex justify-center items-center bg-white max-lg:h-auto">
       <div className=" flex-1  max-w-[80%] flex justify-center items-center text-txt max-lg:flex-col-reverse max-lg:mt-[6%]  max-lg:max-w-full max-lg:">
@@ -32,8 +32,6 @@ const Homepage = () => {
           className=" rounded-3xl max-lg:border-sec"
           src={img1}
           alt="img"
-          
-
         />
         {/* <div className="absolute bg-pri bottom-[20%] right-[8%] px-5 py-3 border-pri  border-2 rounded-md max-lg:hidden">
         <h2 className="text-5xl">200+</h2>
@@ -46,4 +44,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Hero;
