@@ -40,7 +40,7 @@ const Navbar = () => {
         className={`w-[85%] grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-6 md:px-8 lg:px-20 `}
       >
         <div>
-          <Link href="#top">
+          <Link href="/">
             <h1 className="text-pri flex items-center gap-1 font-bold text-xl">
               PRISTIQ BUILD
             </h1>
@@ -72,14 +72,6 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="hover:text-pri transition duration-300">
-              <Link
-                href="/"
-                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
-              >
-                Home
-              </Link>
-            </li>
             <li className="hover:text-pri transition duration-300">
               <Link
                 href="/projects"

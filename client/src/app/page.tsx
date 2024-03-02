@@ -4,6 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import Homepage from "@/components/HeroSection/homepage";
 import Navbar from "@/components/HeroSection/navbar";
 import SliderPage from "@/components/SliderSection/SliderPage";
+import VideoBgSection from "@/components/videoBgSection/videoBgSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       <div className=" bg-bg  flex flex-col justify-center items-center">
       <Navbar />
+      <VideoBgSection />
       <Homepage/>
       {/* our core values
       futurestic designs (vr) */}
