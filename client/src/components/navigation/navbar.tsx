@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import MenuButton from "../MenuButton/MenuButton";
+import MenuButton from "./MenuButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
       }`}
     >
       <header
-        className={`w-[85%] grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-6 md:px-8 lg:px-20 `}
+        className={`w-[90%] mx-auto grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-4 md:px-8 lg:px-10 lg:py-6`}
       >
         <div>
           <Link href="/">
@@ -56,22 +56,12 @@ const Navbar = () => {
           >
             <li className="hover:text-pri transition duration-300">
               <Link
-                href="/whymodular"
-                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium mr-3"
-              >
-                WHY MODULAR
-              </Link>
-            </li>
-
-            <li className="hover:text-pri transition duration-300">
-              <Link
-                href="/whypreistiq"
+                href="/"
                 className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
               >
-                WHY PREISTIQ BUILD
+                Home
               </Link>
             </li>
-
             <li className="hover:text-pri transition duration-300">
               <Link
                 href="/projects"
@@ -82,16 +72,32 @@ const Navbar = () => {
             </li>
             <li className="hover:text-pri transition duration-300">
               <Link
+                href="/why-modular"
+                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium mr-3"
+              >
+                WHY MODULAR
+              </Link>
+            </li>
+            <li className="hover:text-pri transition duration-300">
+              <Link
+                href="/why-pristiq"
+                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
+              >
+                WHY PRISTIQ
+              </Link>
+            </li>
+            <li className="hover:text-pri transition duration-300">
+              <Link
                 href="/about"
                 className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
               >
                 About us
               </Link>
             </li>
-            <li className="hover:text-txt transition duration-300 text-bg bg-acc p-2 px-3 rounded-md">
+            <li className=" text-bg ">
               <Link
                 href="/contact"
-                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
+                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium bg-acc p-2 px-3 rounded-md border-2 border-transparent hover:text-acc hover:bg-transparent hover:border-acc transition duration-300"
               >
                 contact us
               </Link>
