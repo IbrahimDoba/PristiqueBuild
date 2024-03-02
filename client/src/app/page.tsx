@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className=" bg-bg  flex flex-col justify-center items-center">
-      <Navbar />
+      {/* <Navbar /> */}
       <Homepage/>
       {/* our core values
       futurestic designs (vr) */}
@@ -14,9 +14,9 @@ export default function Home() {
 
       <Designs/>       {/* // our process */}
 
-      <AboutUsSection />
+      {/* <AboutUsSection /> */}
       {/* // contact */}
-      <Footer/>
+      {/* <Footer/> */}
       </div>
     </main>
   );
