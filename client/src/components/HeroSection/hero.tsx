@@ -16,12 +16,12 @@ const Hero = () => {
           Builings
         </p>
         <div className="mb-8 w-[70%] justify-between flex ">
-          <button className=" w-[150px] text-txt bg-pri py-2 px-4 rounded text-xl duration-200 hover:bg-sec border border-pri max-md:mr-3">
+          <button className=" w-[150px] text-txt bg-pri py-2 px-4 rounded text-xl duration-200 hover:bg-transparent border border-pri max-md:mr-3">
             Contact us
           </button>
-          <button className="w-[170px] text-black bg-transparent border-acc border rounded duration-200 hover:bg-pri hover:text-sec py-2 px-4 text-xl">
+          {/* <button className="w-[170px] text-black bg-transparent border-acc border rounded duration-200 hover:bg-pri hover:text-sec py-2 px-4 text-xl">
             Meet the team
-          </button>
+          </button> */}
         </div>
         <span className="mb-8 opacity-90 text-md">
           All Our Projects are done by Experts

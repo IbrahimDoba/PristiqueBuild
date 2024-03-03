@@ -37,7 +37,7 @@ const Navbar = () => {
       }`}
     >
       <header
-        className={`w-[90%] mx-auto grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-4 md:px-8 lg:px-10 lg:py-6`}
+        className={`w-[85%] mx-auto grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-4 md:px-8 lg:px-10 lg:py-6`}
       >
         <div>
           <Link href="/">
@@ -55,21 +55,9 @@ const Navbar = () => {
             }`}
           >
             <li className="hover:text-pri transition duration-300">
-              <Link
-                href="/"
-                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
-              >
-                Home
-              </Link>
+             
             </li>
-            <li className="hover:text-pri transition duration-300">
-              <Link
-                href="/projects"
-                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
-              >
-                PROJECTS
-              </Link>
-            </li>
+            
             <li className="hover:text-pri transition duration-300">
               <Link
                 href="/why-modular"
@@ -88,6 +76,14 @@ const Navbar = () => {
             </li>
             <li className="hover:text-pri transition duration-300">
               <Link
+                href="/projects"
+                className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li className="hover:text-pri transition duration-300">
+              <Link
                 href="/about"
                 className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium"
               >
@@ -99,7 +95,7 @@ const Navbar = () => {
                 href="/contact"
                 className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium bg-acc p-2 px-3 rounded-md border-2 border-transparent hover:text-acc hover:bg-transparent hover:border-acc transition duration-300"
               >
-                contact us
+                contact 
               </Link>
             </li>
           </ul>

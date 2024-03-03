@@ -12,7 +12,7 @@ const SectionsPage = () => {
         <div className='mb-10'>
           {' '}
           <h1 className=' font-semibold text-4xl text-start'>
-            The Pristiq Builds
+            how Pristiq Builds
           </h1>
         </div>
         <div className='flex w-full justify-between items-center flex-wrap max-md:justify-center   '>

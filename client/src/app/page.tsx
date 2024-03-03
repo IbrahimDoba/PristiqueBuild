@@ -1,3 +1,4 @@
+import CoreValues from "@/components/CoreValues/CoreValues";
 import Designs from "@/components/DesignSection/SectionsPage";
 import Homepage from "@/components/HeroSection/hero";
 import SliderPage from "@/components/SliderSection/SliderPage";
@@ -8,10 +9,10 @@ export default function Home() {
     <main>
       <div className=" bg-bg  flex flex-col justify-center items-center">
         {/* <Navbar /> */}
-        <VideoBgSection/>
+        {/* <VideoBgSection/> */}
         <Homepage />
-        {/* our core values
-      futurestic designs (vr) */}
+       <CoreValues/>
+       {/*futurestic designs (vr) */}
         <SliderPage /> {/* // our services */}
         <Designs /> {/* // our process */}
         {/* <AboutUsSection /> */}
