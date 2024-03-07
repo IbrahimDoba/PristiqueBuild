@@ -5,11 +5,11 @@ import { SlBadge } from "react-icons/sl";
 
 const CoreValues = () => {
   return (
-    <div className="w-full flex h-screen justify-center items-center">
+    <div className="w-full flex min-h-screen px-4 py-8 lg:py-10 justify-center items-center">
       <div className="w-[80%] items-center justify-center flex flex-col">
         <h2 className="text-3xl text-amber-700 mb-4">OUR CORE VALUES</h2>
         <h1 className="text-txt text-4xl">D.I.E</h1>
-        <div className="flex justify-between items-center my-10">
+        <div className="flex flex-col lg:flex-row gap-4 justify-between items-center my-10">
           <div className="flex flex-col justify-center items-center flex-1">
             <div>
               <FaUsersGear size={100} />
@@ -18,9 +18,7 @@ const CoreValues = () => {
             <p className="text-center tracking-widest p-3">
               Going the extra mile to achieve extraordinary results is one of
               our guiding principles. From design to execution, we meticulously
-              dot all i’s and cross all t’s to create masterpieces crafted to
-              perfection. At Sujimoto, we dont do things 10% better, we do
-              things 10 times better!
+              dot all i’s and cross all t’s to create masterpieces.
             </p>
           </div>
           <div className="flex flex-col justify-center items-center flex-1">
