@@ -7,7 +7,7 @@ const CoreValues = () => {
   return (
     <div className="w-full flex min-h-screen px-4 py-8 lg:py-10 justify-center items-center">
       <div className="w-[80%] items-center justify-center flex flex-col">
-        <h2 className="text-3xl text-amber-700 mb-4">OUR CORE VALUES</h2>
+        <h2 className="text-3xl text-acc mb-4">OUR CORE VALUES</h2>
         <h1 className="text-txt text-4xl">D.I.E</h1>
         <div className="flex flex-col lg:flex-row gap-4 justify-between items-center my-10">
           <div className="flex flex-col justify-center items-center flex-1">

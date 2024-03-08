@@ -27,7 +27,7 @@ const SliderComp = () => {
             }`}
           />
           <p
-            className={`absolute text-acc font-bold text-7xl top-[500px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-4xl ${
+            className={`absolute text-acc font-bold text-7xl top-[500px] max-md:top-[300px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-4xl ${
               index === currentImageIndex ? "opacity-100" : "opacity-0 "
             }`}
           >
@@ -35,7 +35,7 @@ const SliderComp = () => {
           </p>
 
           <p
-            className={`absolute text-sec text-2xl top-[600px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-xl ${
+            className={`absolute text-sec text-2xl top-[600px] max-md:top-[380px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-xl ${
               index === currentImageIndex ? "opacity-100" : "opacity-0 "
             }`}
           >
@@ -43,7 +43,7 @@ const SliderComp = () => {
           </p>
         </div>
       ))}
-      <button className=" absolute z-10 top-[600px] bottom-0 right-0 mr-[8%] w-[auto] h-[65px] text-txt bg-sec p-4 border border-pri text-2xl max-lg:text-xl max-lg:top-[650px] max-lg:mr-0 max-lg:left-0">
+      <button className=" absolute z-10 top-[600px] bottom-0 right-0 mr-[8%] w-[auto] h-[65px] text-txt bg-sec p-4 border border-pri text-2xl max-lg:text-xl max-lg:top-[650px] max-lg:mr-0 max-lg:left-0 max-md:top-[500px] max-md:rounded-2xl">
         Lets Build Something Unique 
       </button>
     </div>

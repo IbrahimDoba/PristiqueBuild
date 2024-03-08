@@ -8,7 +8,7 @@ const Hero = () => {
       <div className=" flex-1  max-w-[80%] flex justify-center items-center text-txt max-lg:flex-col-reverse max-lg:mt-[6%]  max-lg:max-w-full max-lg:">
 
       <div className="flex  flex-1 flex-col  items-start mb-8 max-lg:mb-1 max-lg:p-5 max-lg:items-center">
-        <h1 className=" w-full text-6xl text-start mb-8 max-lg:text-5xl max-lg:text-center">
+        <h1 className=" w-full text-6xl text-start mb-8 max-lg:text-5xl max-lg:text-center max-md:text-start max-md:w-[70%] max-md:text-xl max-md:font-bold">
           Creating Achitechtural Wonders
         </h1>
         <p className=" text-sm mb-8 text-start w-[70%] opacity-70">
