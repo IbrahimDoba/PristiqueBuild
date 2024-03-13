@@ -8,39 +8,39 @@ const CoreValues = () => {
     <div className="w-full flex min-h-screen px-4 py-8 lg:py-10 justify-center items-center">
       <div className="w-[80%] items-center justify-center flex flex-col">
         <h2 className="text-3xl text-acc mb-4">OUR CORE VALUES</h2>
-        <h1 className="text-txt text-4xl">D.I.E</h1>
+        <h1 className="text-txt text-4xl">I.Q.S</h1>
         <div className="flex flex-col lg:flex-row gap-4 justify-between items-center my-10">
           <div className="flex flex-col justify-center items-center flex-1">
             <div>
               <FaUsersGear size={100} />
             </div>
-            <h3 className="text-2xl font-medium my-4"> Diligence</h3>
+            <h3 className="text-2xl font-medium my-4">Innovation</h3>
             <p className="text-center tracking-widest p-3">
-              Going the extra mile to achieve extraordinary results is one of
-              our guiding principles. From design to execution, we meticulously
-              dot all i’s and cross all t’s to create masterpieces.
+              We embrace innovation as the cornerstone of our success,
+              constantly seeking new ways to improve and revolutionize the
+              construction industry.
             </p>
           </div>
           <div className="flex flex-col justify-center items-center flex-1">
             <div>
               <TbStarsFilled size={100} />
             </div>
-            <h3 className="text-2xl font-medium my-4"> Integrity</h3>
+            <h3 className="text-2xl font-medium my-4">Quality</h3>
             <p className="text-center tracking-widest p-3">
-              With every new project, we strive to be more inventive than the
-              last, through the use of latest technology, processes and a future
-              forward thinking approach.
+              We are committed to delivering the highest quality in everything
+              we do, from materials and craftsmanship to customer service and
+              project management.
             </p>
           </div>
           <div className="flex flex-col justify-center items-center flex-1">
             <div>
               <SlBadge size={100} />
             </div>
-            <h3 className="text-2xl font-medium my-4"> Excellence</h3>
+            <h3 className="text-2xl font-medium my-4">Sustainability</h3>
             <p className="text-center tracking-widest p-3">
-              Exceeding expectations is what Sujimoto stands for. We set new
-              standards and beat all records for the satisfaction of our
-              clients.
+              We prioritize sustainability in our practices, striving to
+              minimize our environmental footprint and contribute to a greener
+              future for generations to come.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Rubik, Space_Grotesk } from "next/font/google";
+import { Poppins, Rubik, Space_Grotesk, Source_Sans_3 } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/navigation/navbar";
 
@@ -8,6 +8,8 @@ import Navbar from "@/components/navigation/navbar";
 const rubik = Rubik({ subsets: ["latin"] });
 const poppins = Poppins({ weight: ["100", "200", "300", "400", "500", "600", "700"], subsets: ["latin"] });
 const space= Space_Grotesk({subsets: ["latin"]});
+// font source sans variable / source sands
+const sourcesans = Source_Sans_3({weight: [ "200", "300", "400", "500", "600", "700"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Pristiq Build",
@@ -21,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={space.className}>
+      <body className={sourcesans.className}>
         <Navbar />
         {children}
         <Footer />

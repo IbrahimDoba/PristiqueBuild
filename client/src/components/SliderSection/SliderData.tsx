@@ -15,21 +15,28 @@ export const SliderData = [
   {
     id: 1,
     image: img1,
-    title: "Build Outside The Box",
-    text: "With every detail thought-fully considererd",
+    title: "Modular Construction",
+    text: "From residential to commercial, hospitality to education, discover the versatility and efficiency of modular construction for a wide range of building types.",
   },
   {
     id: 2,
     image: img2,
-    title: "Award-winning designs",
-    text: "Available in large range of types and sizes",
+    title: "Light Steel Gauge Construction",
+    text: "Harness the strength and flexibility of light steel gauge construction for complex and innovative building designs, with advantages in speed, sustainability, and cost-effectiveness.",
 
   },
   {
     id: 3,
     image: img3,
-    title: "Morden Modular Homes",
-    text: "Redefining what is possible in modular constructon",
+    title: "Hybrid Construction",
+    text: "Combine the benefits of modular and conventional construction methods to tailor solutions to the specific needs and requirements of each project.",
+
+  },
+  {
+    id: 4,
+    image: img3,
+    title: "Custom-Tailored Projects",
+    text: "We specialize in custom-tailored projects, working closely with clients to bring their unique visions to life with precision and expertise.",
 
   },
 ];

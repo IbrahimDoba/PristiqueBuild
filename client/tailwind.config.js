@@ -14,8 +14,11 @@ module.exports = {
         txt: '#0D0E11',
         pri: '#5663F0',
         sec: '#E9E9E9',
-        acc: '#4A59FC',
+        acc: '#24597A', // former 4A59FC
       },
+      // acc #24597A
+      // bg #D9DDDC
+      // sec #000
       screens: {
         'max-lg': { max: '1200px' },
         'max-md': { max: '680px' },

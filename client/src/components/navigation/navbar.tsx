@@ -42,9 +42,9 @@ const Navbar = () => {
       >
         <div>
           <Link href='/'>
-            <h1 className='text-pri flex flex-col font-bold text-sm'>
+            <h1 className='text-acc flex font-bold'>
               <span>PRISTIQ</span>
-              <span className='self-end'>BUILD</span>
+              <span className='self-end ml-2'>BUILD</span>
             </h1>
           </Link>
         </div>
