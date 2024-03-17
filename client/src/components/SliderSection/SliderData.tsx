@@ -1,6 +1,7 @@
-import img1 from "../../../assets/slider 2.jpg";
+import img1 from "../../../assets/modu.jpg";
 import img2 from "../../../assets/card1.jpg";
-import img3 from "../../../assets/slider3.jpg";
+import img3 from "../../../assets/Slidercard1.jpg";
+import img4 from "../../../assets/slider3.jpg";
 
 import { StaticImageData } from "next/image";
 
@@ -34,7 +35,7 @@ export const SliderData = [
   },
   {
     id: 4,
-    image: img3,
+    image: img4,
     title: "Custom-Tailored Projects",
     text: "We specialize in custom-tailored projects, working closely with clients to bring their unique visions to life with precision and expertise.",
 

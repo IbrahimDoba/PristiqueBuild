@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@prisma/client": "^5.0.0",
     "@types/node": "20.4.4",
     "@types/react": "18.2.15",

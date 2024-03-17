@@ -1,7 +1,13 @@
 import img1 from "../../../assets/slider1.jpeg";
 import img2 from "../../../assets/card2.jpg";
-import img3 from "../../../assets/card7.jpg";
+import img3 from "../../../assets/prefab.jpg";
 import img4 from "../../../assets/flats1.jpg";
+import img5 from "../../../assets/site.jpg";
+
+
+
+
+
 import { StaticImageData } from "next/image";
 
 export interface PropsType {
@@ -36,7 +42,7 @@ export const sectionsData = [
   },
   {
     id: 4,
-    image: img4,
+    image: img5,
     title: "Site Development",
     text: "Concurrent with fabrication, our team manages site development activities, ensuring that your project site is prepared and ready for assembly.",
     link: "",
