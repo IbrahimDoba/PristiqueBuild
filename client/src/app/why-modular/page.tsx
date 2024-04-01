@@ -4,10 +4,10 @@ function WhyModular() {
   return (
     <main>
       <section className='why-modular mx-auto min-h-[80vh] grid place-content-center text-center bg-altBg bg-fixed'>
-        <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold'>
+        <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-acc'>
           Why Modular?
         </h1>
-        <p>
+        <p className='text-xl text-bg'>
           Here are some insights as to why modular buildings are better and the
           future
         </p>

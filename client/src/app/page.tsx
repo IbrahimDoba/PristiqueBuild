@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <div className=' bg-bg  flex flex-col justify-center items-center'>
         {/* <Navbar /> */}
-        {/* <VideoBgSection/> */}
-        <Hero />
+        <VideoBgSection/>
+        {/* <Hero /> */}
         <CoreValues />
         <FutureDesigns/>
         <SliderPage /> {/* // our services */}

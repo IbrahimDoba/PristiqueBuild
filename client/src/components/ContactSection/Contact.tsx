@@ -31,7 +31,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="flex w-full h-auto pb-10 justify-center items-center bg-white ">
+    <div id="contactus" className="flex w-full h-auto pb-10 justify-center items-center bg-white ">
       <div className="w-[80%] flex justify-between items-center   max-md:flex-col">
         <form ref={form} onSubmit={sendEmail}  className="flex flex-1 flex-col justify-between items-start w-[70%] max-md:mt-6 max-md:w-[90%]">
           <h1 className="text-4xl font-semibold text-acc">Get in Touch</h1>
@@ -77,7 +77,7 @@ const ContactSection = () => {
             <button type="submit" value="Send" className="text-2xl p-3 w-[200px]  text-bg ">Submit</button>
           </div>
         </form>
-        <div className="flex flex-1 flex-col items-center justify-end ">
+        <div className="flex flex-1 flex-col items-end justify-end  ">
           <Image src={contact} width={700} alt="contact png " />
           <div className="flex flex-col w-[50%] items-start justify-start max-md:w-full ">
             <p className="flex ">

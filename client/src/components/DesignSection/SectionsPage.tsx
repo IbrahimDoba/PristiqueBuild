@@ -31,7 +31,7 @@ const SectionsPage = () => {
         </div>
         <div className='flex w-full justify-around items-center max-md:justify-center'>
           <AnimatePresence>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+            <div className='flex flex-wrap justify-between items-center w-full'>
               {currentItems.map((section) => (
                 <motion.div
                  key={section.id}
@@ -39,6 +39,7 @@ const SectionsPage = () => {
                  animate={{ opacity: 1, y: 0 }}
                  exit={{ opacity: 0, y: 50 }}
                  transition={{ duration: 0.5 }}
+                 className=' min-h-[570px]'
                 >
                  <Design
                     id={section.id}

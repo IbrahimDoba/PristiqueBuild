@@ -1,4 +1,4 @@
-import img1 from "../../../assets/modu.jpg";
+import img1 from "../../../assets/slider 2.jpg";
 import img2 from "../../../assets/card1.jpg";
 import img3 from "../../../assets/Slidercard1.jpg";
 import img4 from "../../../assets/slider3.jpg";
