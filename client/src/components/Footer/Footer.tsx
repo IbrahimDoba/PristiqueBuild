@@ -8,7 +8,7 @@ import { FaInstagram } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer className='w-full mx-auto flex justify-center items-center bg-darkBg text-white  px-8 lg:px-24 py-14 lg:py-10'>
-      <div className='w-[80%] footer grid grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] gap-4'>
+      <div className='w-full footer grid grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] gap-4'>
         <div className='flex flex-col justify-between max-sm:items-center'>
           <Link href='#'>
             <Image src={logo} alt='logo' className='max-w-[150px]' />
