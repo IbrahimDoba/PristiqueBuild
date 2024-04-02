@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { TbStarsFilled } from "react-icons/tb";
 import { FaUsersGear } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";

@@ -1,4 +1,4 @@
-import img1 from "../../../assets/modu.jpg";
+import img1 from "../../../assets/slider 2.jpg";
 import img2 from "../../../assets/card1.jpg";
 import img3 from "../../../assets/Slidercard1.jpg";
 import img4 from "../../../assets/slider3.jpg";
@@ -13,19 +13,8 @@ export interface SliderPropsType {
 }
 
 export const SliderData = [
-  {
-    id: 1,
-    image: img1,
-    title: "Modular Construction",
-    text: "From residential to commercial, hospitality to education, discover the versatility and efficiency of modular construction for a wide range of building types.",
-  },
-  {
-    id: 2,
-    image: img2,
-    title: "Light Steel Gauge Construction",
-    text: "Harness the strength and flexibility of light steel gauge construction for complex and innovative building designs, with advantages in speed, sustainability, and cost-effectiveness.",
+ 
 
-  },
   {
     id: 3,
     image: img3,
@@ -38,6 +27,19 @@ export const SliderData = [
     image: img4,
     title: "Custom-Tailored Projects",
     text: "We specialize in custom-tailored projects, working closely with clients to bring their unique visions to life with precision and expertise.",
+
+  },
+  {
+    id: 1,
+    image: img1,
+    title: "Modular Construction",
+    text: "From residential to commercial, hospitality to education, discover the versatility and efficiency of modular construction for a wide range of building types.",
+  },
+  {
+    id: 2,
+    image: img2,
+    title: "Light Steel Gauge Construction",
+    text: "Harness the strength and flexibility of light steel gauge construction for complex and innovative building designs, with advantages in speed, sustainability, and cost-effectiveness.",
 
   },
 ];

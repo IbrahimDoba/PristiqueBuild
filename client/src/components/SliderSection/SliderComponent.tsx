@@ -28,7 +28,7 @@ const SliderComp = () => {
             }`}
           />
           <p
-            className={`absolute text-bg font-bold text-7xl top-[500px] max-md:top-[300px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-4xl ${
+            className={`absolute text-bg font-bold text-7xl w-[70%] ml-[10%] p-2 top-[500px]  z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-4xl max-lg:top-[0px] max-md:text-2xl max-lg:w-full max-lg:ml-0 ${
               index === currentImageIndex ? "opacity-100" : "opacity-0 "
             }`}style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
           >
@@ -36,7 +36,7 @@ const SliderComp = () => {
           </p>
 
           <p
-            className={`absolute text-sec text-2xl top-[600px] max-md:top-[380px] z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-xl ${
+            className={`absolute text-sec w-[70%] text-2xl top-[600px] ml-[10%] p-2 z-10 left-0 right-0 pl-[12%]  transition-opacity duration-1000 max-lg:text-xl max-lg:top-[100px] max-lg:w-full max-lg:ml-0 max-md:text-sm ${
               index === currentImageIndex ? "opacity-100" : "opacity-0 "
             }`}style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
           >
