@@ -38,7 +38,7 @@ const Navbar = () => {
       }`}
     >
       <header
-        className={`w-[85%] mx-auto grid grid-cols-[auto,_auto] md:flex justify-between items-center py-3 px-4 md:px-8 lg:px-10 lg:py-4`}
+        className={`w-[85%] mx-auto grid grid-cols-[auto,_auto] md:flex justify-between items-center py-4 px-4 md:px-8 lg:px-10 lg:py-6`}
       >
         <div>
           <Link href='/'>
