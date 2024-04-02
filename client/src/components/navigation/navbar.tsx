@@ -90,7 +90,7 @@ const Navbar = () => {
             </li>
             <li className=' text-bg transition duration-300'>
               <Link
-                href='#contactus'
+                href='/contact'
                 className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium bg-acc p-2 px-3 rounded-md border-2 border-transparent hover:text-acc hover:bg-transparent hover:border-acc transition duration-300'
               >
                 contact

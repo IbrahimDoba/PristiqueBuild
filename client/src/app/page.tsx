@@ -19,7 +19,7 @@ export default function Home() {
         <SliderPage /> {/* // our services */}
         <Designs /> {/* // our process */}
         <Aboutus/>
-        <ContactSection/>
+        {/* <ContactSection/> */}
         {/* <Footer/> */}
       </div>
     </main>

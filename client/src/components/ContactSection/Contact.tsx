@@ -31,7 +31,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div id="contactus" className="flex w-full h-auto pb-10 justify-center items-center bg-white ">
+    <div id="contactus" className="flex w-full h-screen pb-10 justify-center items-center bg-white ">
       <div className="w-[80%] flex justify-between items-center   max-md:flex-col">
         <form ref={form} onSubmit={sendEmail}  className="flex flex-1 flex-col justify-between items-start w-[70%] max-md:mt-6 max-md:w-[90%]">
           <h1 className="text-4xl font-semibold text-acc">Get in Touch</h1>
