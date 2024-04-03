@@ -31,11 +31,11 @@ const ContactSection = () => {
   };
 
   return (
-    <div id="contactus" className="flex w-full h-screen pb-10 justify-center items-center bg-white ">
+    <div id="contactus" className="flex w-full h-auto pb-10 justify-center items-center bg-white ">
       <div className="w-[80%] flex justify-between items-center   max-md:flex-col">
         <form ref={form} onSubmit={sendEmail}  className="flex flex-1 flex-col justify-between items-start w-[70%] max-md:mt-6 max-md:w-[90%]">
-          <h1 className="text-4xl font-semibold text-acc">Get in Touch</h1>
-          <h3 className="text-xl my-5">
+          <h1 className="text-4xl font-semibold text-acc max-lg:text-xl">Get in Touch</h1>
+          <h3 className="text-xl my-5 max-lg:md">
             Ready to embark on your next construction project with PristiqBuild?
             Fill out the form below to get in touch with our team, or connect
             with us on social media to stay updated on our latest projects and

@@ -1,22 +1,31 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import vr1 from "../../../assets/vr1.jpg";
 import vr2 from "../../../assets/vr2.jpg";
 import vr3 from "../../../assets/vr3.jpg";
+import { motion } from "framer-motion";
+import { introLeftVariants, introRightVariants } from "@/app/about/page";
 
 const FutureDesigns = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full py-10 h-auto bg-white">
       <h1 className="text-4xl font-semibold my-10">Futureistic Designs</h1>
       <div className="flex w-[80%] min-h-[500px] justify-center items-center max-lg:flex-col">
-        <div className="flex flex-1  ">
+        <motion.div
+          className="flex flex-1  "
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={introLeftVariants}
+        >
           <Image
             width={600}
             src={vr1}
             className="rounded-xl"
             alt="virtual reaclity used by a woman"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-1  flex-col justify-center items-start max-lg:items-center max-lg:mt-4">
           <h2 className="text-3xl text-start mb-4 max-md:text-xl max-md:font-semibold">
             {" "}
@@ -30,14 +39,20 @@ const FutureDesigns = () => {
         </div>
       </div>
       <div className="flex flex-row-reverse w-[80%] min-h-[500px] justify-center items-center my-10  max-lg:flex-col">
-        <div className="flex flex-1 ">
+        <motion.div
+          className="flex flex-1  "
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={introRightVariants}
+        >
           <Image
             width={600}
             src={vr2}
             className="rounded-xl"
             alt="virtual reaclity used by a woman"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-1  flex-col justify-center items-start max-lg:items-center max-lg:mt-4">
           <h2 className="text-3xl text-start mb-4 max-md:text-xl max-md:font-semibold">
             Client-Centric Design
@@ -50,14 +65,20 @@ const FutureDesigns = () => {
         </div>
       </div>
       <div className="flex w-[80%] justify-center min-h-[500px] items-center max-lg:flex-col">
-        <div className="flex flex-1 ">
+        <motion.div
+          className="flex flex-1  "
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={introLeftVariants}
+        >
           <Image
             width={600}
             src={vr3}
             className="rounded-xl"
             alt="virtual reaclity used by a woman"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-1  flex-col justify-center items-start max-lg:items-center max-lg:mt-4">
           <h2 className="text-3xl text-start mb-4 max-md:text-xl max-md:font-semibold">
             Innovative Modular Design

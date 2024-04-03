@@ -19,18 +19,23 @@ const Footer = () => {
           <p className='font-semibold lg:text-xl mb-2 lg:mb-4'>Our Builds</p>
           <ul className='flex flex-col gap-2.5 max-lg:text-sm'>
             <li>
-              <Link href='#' className='hover:underline'>
-                Fox modular
+              <Link href='/why-modular' className='hover:underline'>
+                Why Modular
               </Link>
             </li>
             <li>
-              <Link href='#' className='hover:underline'>
-                The Flats
+              <Link href='why-pristiq' className='hover:underline'>
+                Why pristiq
               </Link>
             </li>
             <li>
-              <Link href='#' className='hover:underline'>
-                Fox Transformables
+              <Link href='/projects' className='hover:underline'>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href='/about' className='hover:underline'>
+               About us
               </Link>
             </li>
           </ul>

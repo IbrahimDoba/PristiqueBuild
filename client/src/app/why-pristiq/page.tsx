@@ -1,24 +1,26 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import { CardSection } from "../about/reuseComps";
 
 function WhyPristiqbuild() {
   return (
     <main>
-      <section className='why-pristiq mx-auto min-h-[80vh] grid place-content-center text-center bg-altBg bg-fixed'>
-        <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold'>
+      <section className="why-pristiq mx-auto min-h-[80vh] grid place-content-center text-center bg-altBg bg-fixed">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">
           Why PristiqBuild?
         </h1>
-        <p className='max-w-screen-md'>
+        {/* <p className='max-w-screen-md'>
           We are a team of architects and enviroment enthusiasts dedicated to
           improving our enviroment by usings renewable and eco-friendly
           materials and methods
-        </p>
+        </p> */}
       </section>
       <section>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             The Approach
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             At PristiqBuild, we uphold a relentless pursuit of excellence in
             every aspect of construction. Our approach is driven by innovation,
             leveraging cutting-edge technology to revolutionize traditional
@@ -31,11 +33,11 @@ function WhyPristiqbuild() {
             detail, and uncompromising quality
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             The PristiqBuild Timeline
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             PristiqBuild prides itself on its ability to deliver projects with
             unparalleled speed and efficiency. Our streamlined processes and
             robust project management techniques enable us to eliminate delays
@@ -48,11 +50,11 @@ function WhyPristiqbuild() {
             compromising on excellence.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 '>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 ">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Flexible and Innovative Designs
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             One of the hallmarks of PristiqBuild is our commitment to innovation
             and flexibility in design. We believe that every project should be a
             reflection of our client&apos;s vision, tailored to meet their
@@ -64,11 +66,11 @@ function WhyPristiqbuild() {
             creative solutions that exceed expectations and inspire awe.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Reduce Inefficiencies
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             At PristiqBuild, we are committed to reducing inefficiencies and
             optimizing project outcomes. Our streamlined processes and rigorous
             quality control measures minimize waste, optimize resources, and
@@ -80,11 +82,11 @@ function WhyPristiqbuild() {
             and cost-effectiveness, without compromising on quality.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Lower Overall Cost
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             PristiqBuild is dedicated to providing cost-effective solutions
             without compromising on quality or sustainability. Our efficient
             construction methods and optimized resource utilization translate
@@ -96,11 +98,11 @@ function WhyPristiqbuild() {
             breaking the bank
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 bg-altBg">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Mitigate Cost Overruns
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             Cost overruns can derail even the most well-planned construction
             projects, which is why PristiqBuild takes a proactive approach to
             cost management and risk mitigation. Our experienced team
@@ -113,11 +115,11 @@ function WhyPristiqbuild() {
             with financial prudence and accountability.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 '>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 ">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Sustainability Mindset
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             PristiqBuild is committed to sustainability and eco-friendly
             construction practices. We recognize the importance of minimizing
             our environmental footprint and are dedicated to implementing
@@ -131,11 +133,11 @@ function WhyPristiqbuild() {
             to come.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8'>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Dedication to Customer Satisfaction
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             At PristiqBuild, customer satisfaction is our top priority. We are
             committed to exceeding customer expectations at every stage of the
             project, from initial consultation to final delivery. Our
@@ -149,11 +151,11 @@ function WhyPristiqbuild() {
             and attention to detail they deserve.
           </p>
         </div>
-        <div className='text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 '>
-          <h2 className='text-lg md:text-xl lg:text-3xl font-bold text-accent'>
+        <div className="text-center px-6 lg:px-10 py-16 flex flex-col items-center gap-4 lg:gap-8 ">
+          <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-accent">
             Quality and Factory Precision Assured
           </h2>
-          <p className='font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent'>
+          <p className="font-medium md:text-lg lg:text-xl lg:max-w-screen-lg text-accent">
             Quality is at the core of everything we do at PristiqBuild. Our
             commitment to delivering superior construction projects is reflected
             in our rigorous quality assurance protocols and factory-controlled
@@ -168,6 +170,7 @@ function WhyPristiqbuild() {
           </p>
         </div>
       </section>
+      <CardSection />
     </main>
   );
 }

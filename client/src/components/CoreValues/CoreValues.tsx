@@ -2,11 +2,19 @@
 import { TbStarsFilled } from "react-icons/tb";
 import { FaUsersGear } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";
+import { motion } from "framer-motion";
+import { introBottomVariants } from "@/app/about/page";
 
 const CoreValues = () => {
   return (
     <div className="w-full flex min-h-screen px-4 py-8 lg:py-10 justify-center items-center">
-      <div className="w-[80%] items-center justify-center flex flex-col">
+       <motion.div
+          className="w-[80%] items-center justify-center flex flex-col"
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={introBottomVariants}
+        >
         <h2 className="text-3xl text-acc mb-4">OUR CORE VALUES</h2>
         <h1 className="text-txt text-4xl">I.Q.S</h1>
         <div className="flex flex-col lg:flex-row gap-4 justify-between items-center my-10">
@@ -48,7 +56,7 @@ const CoreValues = () => {
           {" "}
           About us
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };
