@@ -1,7 +1,7 @@
 import React from "react";
 import { modularDProps } from "./modularData";
-import { introBottomVariants } from "../about/page";
 import { motion } from "framer-motion";
+import { introBottomVariants } from "../about/reuseComps";
 
 const ModularCard = ({ id, text, title }: modularDProps) => {
   const textItems = text.split(",").map((item: string, index: number) => (
