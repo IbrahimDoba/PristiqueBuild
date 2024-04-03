@@ -12,62 +12,11 @@ import img6 from "../../../pagesAssets/img6.jpg";
 import img7 from "../../../pagesAssets/img7.jpg";
 import img10 from "../../../pagesAssets/img10.png";
 import img11 from "../../../pagesAssets/img11.jpg";
-import { CardSection } from "./reuseComps";
+import { CardSection, introBottomVariants, introLeftVariants, introRightVariants } from "./reuseComps";
 import { motion } from "framer-motion";
 import CoreValues from "@/components/CoreValues/CoreValues";
 
-export const introLeftVariants = {
-  hide: {
-    opacity: 0,
-    x: -300,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-export const introRightVariants = {
-  hide: {
-    opacity: 0,
-    x: 300,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-export const introBottomVariants = {
-  hide: {
-    opacity: 0,
-    y: 300,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-export const introTopVariants = {
-  hide: {
-    opacity: 0,
-    y: -300,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
+
 
 const About = () => {
   return (

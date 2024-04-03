@@ -5,7 +5,7 @@ import vr1 from "../../../assets/vr1.jpg";
 import vr2 from "../../../assets/vr2.jpg";
 import vr3 from "../../../assets/vr3.jpg";
 import { motion } from "framer-motion";
-import { introLeftVariants, introRightVariants } from "@/app/about/page";
+import { introLeftVariants, introRightVariants } from "@/app/about/reuseComps";
 
 const FutureDesigns = () => {
   return (

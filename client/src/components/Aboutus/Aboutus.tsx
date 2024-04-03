@@ -4,7 +4,7 @@ import React from "react";
 import meeting from "../../../assets/men mount.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { introLeftVariants } from "@/app/about/page";
+import { introLeftVariants } from "@/app/about/reuseComps";
 
 const Aboutus = () => {
   return (
