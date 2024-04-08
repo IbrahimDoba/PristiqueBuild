@@ -11,7 +11,7 @@ const Design = ({ title, image, text }: PropsType) => {
           src={image}
           alt="img1"
           style={{
-            objectFit: "fill",
+            objectFit: "cover",
             height: "100%", // cover, contain, none
           }}
         />

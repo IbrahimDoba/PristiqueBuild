@@ -4,7 +4,7 @@ import React from "react";
 import { modularData } from "./modularData";
 import ModularCard from "./modularCard";
 import img4 from "../../../pagesAssets/img4.jpg";
-import img3 from "../../../pagesAssets/img3.jpg";
+import img3 from "../../../assets/card2.jpg";
 import img14 from "../../../pagesAssets/img14.png";
 import img13 from "../../../pagesAssets/img13.jpeg";
 import Image from "next/image";
@@ -14,7 +14,7 @@ function WhyModular() {
   return (
     <main className="overflow-x-hidden">
       <section className="why-modular mx-auto min-h-[65vh] grid place-content-center text-center bg-bg ">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-[#000]">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-acc">
           Why Modular?
         </h1>
         {/* <p className="text-xl text-black bg-slate-200">
@@ -25,8 +25,9 @@ function WhyModular() {
 
       <section className=" w-full justify-center items-center flex  py-6  bg-bg">
         <div className="w-[70%] justify-center items-center flex flex-col ">
-          <h1 className="text-3xl my-3">What is Modular Construction </h1>
-          <p className="my-3 mb-6">
+          <h1 className="text-3xl my-7">What is Modular Construction </h1>
+          <div className="flex flex-row-reverse w-full h-[70vh] justify-center items-center ">
+          <p className=" flex flex-1 my-3 mb-6 leading-loose ml-7">
             Modular construction represents a groundbreaking approach to
             building construction, where building components are prefabricated
             in a factory-controlled environment before being transported to the
@@ -38,10 +39,14 @@ function WhyModular() {
             way buildings are designed and built.
           </p>
           <div>
-            <Image width={700} src={img3} alt="modualar constuct" />
+            <Image className="flex flex-1" width={700} src={img3} alt="modualar constuct" />
           </div>
+          </div>
+          <div className="w-full h-screen justify-center items-center flex flex-col">
+
+          
           <h3 className="text-3xl my-3 mt-6 max-lg:text-2xl">Modular vs Traditional</h3>
-          <p className="my-3">
+          <p className="my-[5%] font-semibold">
             Modular construction revolutionizes the traditional building process
             by prefabricating components off- site, offering numerous advantages
             over conventional construction methods. This comparison outlines the
@@ -67,6 +72,7 @@ function WhyModular() {
               alt="modualar constuct"
             />
           </div>
+        </div>
         </div>
       </section>
       <section className="w-full flex justify-center items-center my-8">
@@ -321,3 +327,11 @@ function WhyModular() {
 }
 
 export default WhyModular;
+
+
+
+
+
+
+
+

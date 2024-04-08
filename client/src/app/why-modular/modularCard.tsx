@@ -22,7 +22,7 @@ const ModularCard = ({ id, text, title }: modularDProps) => {
     >
       <h2 className=" flex flex-1 text-3xl font-semibold">{numbers}</h2>
       <h2 className="flex flex-1  text-2xl font-semibold">{title}</h2>
-      <p className="flex flex-1 opacity-80">{textItems}</p>
+      <p className="flex flex-1 text-start opacity-80">{textItems}</p>
     </motion.div>
   );
 };

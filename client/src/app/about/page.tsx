@@ -21,25 +21,18 @@ import CoreValues from "@/components/CoreValues/CoreValues";
 const About = () => {
   return (
     <main className="overflow-x-hidden">
-      <section className="about text-black mx-auto min-h-[65vh] grid place-content-center text-center bg-altBg bg-fixed ">
+      <section className="about text-black mx-auto min-h-[85vh] grid place-content-center text-center bg-altBg bg-fixed ">
         <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold uppercase mb-4">
           ABOUT US
         </h1>
-        <p className="max-w-screen-md">
+        <p className="max-w-screen-md font-semibold">
           At Pristiq Build, we are pioneers in revoluonizing the construction
           industry with our forward-thinking approach.
         </p>
       </section>
       <section className="w-[100%]  justify-center items-center bg-bg flex flex-col">
         <div className="flex justify-end items-center w-[80%]  my-5">
-          <h1 className=" w-[50%] text-xl font-semibold  max-lg:text-md max-lg:w-full">
-            While we cherish meless values like top-notch customer service,
-            family-oriented principles, and unwavering community support, we
-            thrive on defying norms. With over a decade of experience, we have
-            consistently sha ered expecta ons in the realm of modular homes,
-            introducing cutting-edge designs that re-define the essence of
-            modern living.
-          </h1>
+        
         </div>
         <div className="w-[80%] h-auto my-[4%] bg-bg flex justify-center items-center max-lg:flex-col max-lg:h-auto">
           <motion.div

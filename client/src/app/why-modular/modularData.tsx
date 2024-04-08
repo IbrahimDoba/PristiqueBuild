@@ -8,7 +8,7 @@ export const modularData = [
   {
     id: 1,
     title: "Accelerated Project Timelines",
-    text: "-Majority of construction work completed in controlled factory environment ,-Faster project completion, Reduced labor costs,-Minimized on-site disruptions",
+    text: "-Majority of construction work completed in controlled factory environment ,-Faster project completion,-Minimized on-site disruptions",
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export const modularData = [
   {
     id: 9,
     title: "Scalability and Flexibility",
-    text: "-Majority of construction work completed in controlled factory environment ,-Faster project completion, Reduced labor costs,-Minimized on-site disruptions",
+    text: "-Easy expansion or reconfiguration of modular buildings ,-Faster project completion,-Minimized on-site disruptions",
   },
   {
     id: 10,

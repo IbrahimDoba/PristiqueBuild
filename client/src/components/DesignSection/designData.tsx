@@ -1,5 +1,6 @@
 import img1 from "../../../assets/slider1.jpeg";
-import img2 from "../../../assets/card2.jpg";
+import img2 from "../../../pagesAssets/img2.jpg";
+import img91 from "../../../pagesAssets/img9.jpg";
 import img3 from "../../../assets/prefab.jpg";
 import img4 from "../../../assets/site.jpg";
 import img6 from "../../../assets/D1.png";
@@ -8,10 +9,6 @@ import img8 from "../../../assets/D5.jpg";
 import img9 from "../../../assets/D6.jpg";
 import img10 from "../../../assets/slider1.jpeg";
 import img11 from "../../../assets/D8.jpg";
-
-
-
-
 
 import { StaticImageData } from "next/image";
 
@@ -26,7 +23,7 @@ export interface PropsType {
 export const sectionsData = [
   {
     id: 1,
-    image: img6,
+    image: img2,
     title: "Meticulous Planning and Design",
     text: "Our expert team meticulously plans and designs each project, ensuring that every detail is carefully considered and optimized for efficiency and functionality.",
     link: "",
@@ -47,14 +44,14 @@ export const sectionsData = [
   },
   {
     id: 4,
-    image: img4,
+    image: img8,
     title: "Site Development",
     text: "Concurrent with fabrication, our team manages site development activities, ensuring that your project site is prepared and ready for assembly.",
     link: "",
   },
   {
     id: 5,
-    image: img8,
+    image: img91,
     title: "Quality Control and Inspections",
     text: "Rigorous quality control measures are implemented at every stage of the process, guaranteeing the highest standards of craftsmanship and safety.",
     link: "",

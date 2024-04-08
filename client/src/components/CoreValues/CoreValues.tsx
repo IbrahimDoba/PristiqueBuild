@@ -4,6 +4,7 @@ import { FaUsersGear } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";
 import { motion } from "framer-motion";
 import { introBottomVariants } from "@/app/about/reuseComps";
+import Link from "next/link";
 
 const CoreValues = () => {
   return (
@@ -52,10 +53,13 @@ const CoreValues = () => {
             </p>
           </div>
         </div>
+        <Link href='/about' >
         <button className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm text-white max-md:text-white font-medium bg-acc p-2 px-3 rounded-md border-2 border-transparent hover:text-acc hover:bg-transparent hover:border-acc transition duration-300">
           {" "}
           About us
         </button>
+        </Link>
+      
       </motion.div>
     </div>
   );

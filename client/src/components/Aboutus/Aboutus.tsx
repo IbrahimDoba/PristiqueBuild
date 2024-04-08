@@ -34,9 +34,10 @@ const Aboutus = () => {
           modern living.
         </p>
         <Link href="/about">
-          <button className="w-[150px] text-txt bg-transparent border-acc border rounded py-2 px-4 test-sm">
-            More About us
-          </button>
+        <button className="outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm text-white max-md:text-white font-medium bg-acc p-2 px-3 rounded-md border-2 border-transparent hover:text-acc hover:bg-transparent hover:border-acc transition duration-300">
+          {" "}
+          More About us
+        </button>
         </Link>
       </div>
     </div>
