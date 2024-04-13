@@ -5,7 +5,7 @@ import { modularData } from "./modularData";
 import ModularCard from "./modularCard";
 import img4 from "../../../pagesAssets/img4.jpg";
 import img3 from "../../../assets/card2.jpg";
-import img14 from "../../../pagesAssets/img14.png";
+import img14 from "../../../pagesAssets/img14.jpg";
 import img13 from "../../../pagesAssets/img13.jpeg";
 import Image from "next/image";
 import { CardSection } from "../about/reuseComps";
@@ -14,7 +14,7 @@ function WhyModular() {
   return (
     <main className="overflow-x-hidden">
       <section className="why-modular mx-auto min-h-[65vh] grid place-content-center text-center bg-bg ">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-acc">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-white bg-black bg-opacity-60 p-2 rounded-xl">
           Why Modular?
         </h1>
         {/* <p className="text-xl text-black bg-slate-200">
@@ -25,9 +25,9 @@ function WhyModular() {
 
       <section className=" w-full justify-center items-center flex  py-6  bg-bg">
         <div className="w-[70%] justify-center items-center flex flex-col ">
-          <h1 className="text-3xl my-7">What is Modular Construction </h1>
-          <div className="flex flex-row-reverse w-full h-[70vh] justify-center items-center ">
-          <p className=" flex flex-1 my-3 mb-6 leading-loose ml-7">
+          <h1 className="text-3xl my-7 max-md:text-2xl font-semibold">What is Modular Construction </h1>
+          <div className="flex flex-row-reverse w-full mt-[3%] mb-[10%] h-auto justify-center items-center max-lg:flex-col ">
+          <p className=" flex flex-1 my-3 mb-6 leading-loose ml-7 max-lg:mt-[5%]">
             Modular construction represents a groundbreaking approach to
             building construction, where building components are prefabricated
             in a factory-controlled environment before being transported to the
@@ -38,15 +38,15 @@ function WhyModular() {
             efficiency, quality control, and sustainability, revolutionizing the
             way buildings are designed and built.
           </p>
-          <div>
-            <Image className="flex flex-1" width={700} src={img3} alt="modualar constuct" />
+          <div className="flex flex-1">
+            <Image className="" width={700} src={img3} alt="modualar constuct" />
           </div>
           </div>
-          <div className="w-full h-screen justify-center items-center flex flex-col">
+          <div className="w-full h-auto justify-center items-center flex flex-col">
 
           
-          <h3 className="text-3xl my-3 mt-6 max-lg:text-2xl">Modular vs Traditional</h3>
-          <p className="my-[5%] font-semibold">
+          <h3 className="text-3xl my-3  max-lg:text-2xl">Modular vs Traditional</h3>
+          <p className="my-[3%] font-semibold">
             Modular construction revolutionizes the traditional building process
             by prefabricating components off- site, offering numerous advantages
             over conventional construction methods. This comparison outlines the
@@ -56,21 +56,26 @@ function WhyModular() {
           </p>
           <div className="flex  justify-center items-center w-full max-lg:flex-col">
             {" "}
+            <div className="flex flex-1 m-3">
             <Image
-              className="flex flex-1 mr-10 max-lg:mr-0"
+              className=" mr-10 max-lg:mr-0"
               width={500}
               height={500}
               src={img13}
               alt="modualar constuct"
             />
+            </div>
+            <div className="flex flex-1 m-3">
             <Image
-              className="flex flex-1 h-[500px] max-lg:h-auto max-lg:mt-10"
+              className=" mr-10 max-lg:mr-0"
               width={500}
               height={500}
-         
               src={img14}
               alt="modualar constuct"
             />
+            </div>
+           
+          
           </div>
         </div>
         </div>

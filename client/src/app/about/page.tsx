@@ -12,17 +12,21 @@ import img6 from "../../../pagesAssets/img6.jpg";
 import img7 from "../../../pagesAssets/img7.jpg";
 import img10 from "../../../pagesAssets/img10.png";
 import img11 from "../../../pagesAssets/img11.jpg";
-import { CardSection, introBottomVariants, introLeftVariants, introRightVariants } from "./reuseComps";
+import img12 from "../../../pagesAssets/cep.jpg";
+import {
+  CardSection,
+  introBottomVariants,
+  introLeftVariants,
+  introRightVariants,
+} from "./reuseComps";
 import { motion } from "framer-motion";
 import CoreValues from "@/components/CoreValues/CoreValues";
-
-
 
 const About = () => {
   return (
     <main className="overflow-x-hidden">
       <section className="about text-black mx-auto min-h-[85vh] grid place-content-center text-center bg-altBg bg-fixed ">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold uppercase mb-4">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4 text-black bg-white bg-opacity-60 p-2 rounded-xl">
           ABOUT US
         </h1>
         <p className="max-w-screen-md font-semibold">
@@ -31,9 +35,7 @@ const About = () => {
         </p>
       </section>
       <section className="w-[100%]  justify-center items-center bg-bg flex flex-col">
-        <div className="flex justify-end items-center w-[80%]  my-5">
-        
-        </div>
+        <div className="flex justify-end items-center w-[80%]  my-5"></div>
         <div className="w-[80%] h-auto my-[4%] bg-bg flex justify-center items-center max-lg:flex-col max-lg:h-auto">
           <motion.div
             className="flex flex-1"
@@ -127,19 +129,34 @@ const About = () => {
               <div className="rounded-full  w-[100px] h-[150px] justify-center items-center flex">
                 <Image className="rounded-full" src={img10} alt="ceoImage" />
               </div>
-              <h3 className="text-3xl text-center my-[2%]">CEO: Silverfangs</h3>
+              <div className="flex flex-col my-[2%]">
+                <h3 className="text-xl text-center font-semibold">ABDULAZEEZ</h3>
+                <h3 className="text-2xl text-center ">
+                  CO-FOUNDER AND COO
+                </h3>
+              </div>
             </div>
             <div className="flex flex-col w-[300px] h-[250px] justify-between items-center border border-gray-300 shadow-xl rounded-2xl p-2 m-4">
               <div className="rounded-full w-[100px] h-[150px] justify-center items-center flex">
-                <Image className="rounded-full" src={img11} alt="ceoImage" />
+                <Image className="rounded-full" src={img12} alt="ceoImage" />
               </div>
-              <h3 className="text-3xl text-center my-[2%]">CEO: Silverfangs</h3>
+              <div className="flex flex-col my-[2%]">
+                <h3 className="text-xl text-center font-semibold">YUSUF</h3>
+                <h3 className="text-2xl text-center ">
+                  FOUNDER AND CEO
+                </h3>
+              </div>
             </div>
             <div className="flex flex-col w-[300px] h-[250px] justify-between items-center border border-gray-300 shadow-xl rounded-2xl p-2 m-4">
               <div className="rounded-full  w-[100px] h-[150px] justify-center items-center flex">
-                <Image className="rounded-full" src={img10} alt="ceoImage" />
+                <Image className="rounded-full" src={img11} alt="ceoImage" />
               </div>
-              <h3 className="text-3xl text-center my-[2%]">CEO: Silverfangs</h3>
+              <div className="flex flex-col my-[2%]">
+                <h3 className="text-xl text-center font-semibold">NAJIBU</h3>
+                <h3 className="text-2xl text-center ">
+                  CO-FOUNDER AND CTO
+                </h3>
+              </div>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const CoreValues = () => {
           exit="hide"
           variants={introBottomVariants}
         >
-        <h2 className="text-3xl text-acc mb-4">OUR CORE VALUES</h2>
+        <h2 className="text-3xl text-acc mb-4 max-md:text-2xl">OUR CORE VALUES</h2>
         <h1 className="text-txt text-4xl">I.Q.S</h1>
         <div className="flex flex-col lg:flex-row gap-4 justify-between items-center my-10">
           <div className="flex flex-col justify-center items-center flex-1">

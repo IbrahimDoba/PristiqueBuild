@@ -81,19 +81,19 @@ const Footer = () => {
             <li>
               <Link
                 aria-label='Visit our Instagram page'
-                href='#'
+                href=' https://www.instagram.com/pristiqbuild/ '
                 target='blank'
               >
                 <FaInstagram />
               </Link>
             </li>
             <li>
-              <Link aria-label='Visit our Twitter page' href='#' target='blank'>
+              <Link aria-label='Visit our Twitter page' href='https://twitter.com/pristiqbuild' target='blank'>
                 <BsTwitterX />
               </Link>
             </li>
             <li>
-              <Link aria-label='Visit our LinkedIn page' href='#'>
+              <Link aria-label='Visit our LinkedIn page' href='https://www.linkedin.com/company/pristiqbuild'>
                 <FaLinkedin />
               </Link>
             </li>

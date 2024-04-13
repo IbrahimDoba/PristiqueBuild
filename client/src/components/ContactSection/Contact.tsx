@@ -81,16 +81,16 @@ const ContactSection = () => {
           <Image src={contact} width={700} alt="contact png " />
           <div className="flex flex-col w-[50%] items-start justify-start max-md:w-full ">
             <p className="flex ">
-              <CiLocationOn className="mr-3" size={30} /> wuse zone 7, Abuja
+              <CiLocationOn className="mr-3" size={30} /> wuse zone 5, Abuja
             </p>
             <p className="my-3 flex">
               <IoCallOutline className="mr-3" size={30} />
-              +234 08 234 781 232
+              +234 708 718 3815
             </p>
             <p className="flex">
               {" "}
               <MdOutlineEmail className="mr-3" size={30} />{" "}
-              @prestigebuild.gmail.com
+              info@pristiqbuild.com
             </p>
           </div>
         </div>
