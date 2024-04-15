@@ -52,7 +52,7 @@ const ContactSection = () => {
               placeholder="Enter your name"
             />
           </div>
-          <div className="my-5 w-[70%] max-md:w-full">
+          <div className="my-3 w-[70%] max-md:w-full">
             <label className="block mb-2 text-sm font-medium text-txt">
               Email
             </label>
@@ -61,6 +61,17 @@ const ContactSection = () => {
               name="user_email"
               className="bg-gray-50 border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter Your Email"
+            />
+          </div>
+          <div className="my-3 w-[70%] max-md:w-full">
+            <label className="block mb-2 text-sm font-medium text-txt">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              name="user_number"
+              className="bg-gray-50 border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Enter Your Phone Number"
             />
           </div>
           <div className="w-[70%] max-md:w-full">

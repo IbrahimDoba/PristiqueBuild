@@ -7,7 +7,7 @@ function WhyPristiqbuild() {
   return (
     <main className="overflow-x-hidden">
       <section className="why-pristiq mx-auto min-h-[80vh] grid place-content-center text-center bg-altBg bg-fixed ">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white bg-black bg-opacity-60 p-2 rounded-xl">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-black bg-white bg-opacity-60 p-2 rounded-xl">
           Why PristiqBuild?
         </h1>
         {/* <p className='max-w-screen-md'>

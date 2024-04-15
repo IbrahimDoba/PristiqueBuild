@@ -14,7 +14,7 @@ function WhyModular() {
   return (
     <main className="overflow-x-hidden">
       <section className="why-modular mx-auto min-h-[65vh] grid place-content-center text-center bg-bg ">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-white bg-black bg-opacity-60 p-2 rounded-xl">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-3 uppercase text-black bg-white bg-opacity-60 p-2 rounded-xl">
           Why Modular?
         </h1>
         {/* <p className="text-xl text-black bg-slate-200">
