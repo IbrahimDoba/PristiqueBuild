@@ -3,26 +3,8 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const VideoBgSection = ({ isVisible }: any) => {
-  const [windowWidth, setWindowWidth] = useState(1110); // Initialize with a default value
-
-  useEffect(() => {
-     // Check if window is defined (i.e., we're in the browser)
-     if (typeof window !== 'undefined') {
-       const handleResize = () => setWindowWidth(window.innerWidth);
-       window.addEventListener('resize', handleResize);
- 
-       // Cleanup function to remove the event listener
-       return () => window.removeEventListener('resize', handleResize);
-     }
-  }, []);
   return (
-    <header
-      className={`${
-        windowWidth < 1000
-          ? "hidden"
-          : "relative  flex items-center justify-center h-screen  overflow-hidden w-full"
-      } `}
-    >
+    <header className="relative  flex items-center justify-center h-screen  overflow-hidden w-full max-lg:hidden">
       <div className="relative w-[650px] z-30 p-5 text-2xl text-txt  bg-opacity-50 rounded-xl  right-[20%] mr-[15%] bottom-[0%] max-md:ml-5 max-md:w-auto">
         <motion.div
           initial={{ opacity: 0, x: -100 }} // Start from the left with some opacity

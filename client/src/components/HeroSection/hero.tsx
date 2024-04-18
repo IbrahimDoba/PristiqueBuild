@@ -4,23 +4,12 @@ import React, { useEffect, useState } from "react";
 import img1 from "../../../assets/logo2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState(1100); // Initialize with a default value
 
-  useEffect(() => {
-     // Check if window is defined (i.e., we're in the browser)
-     if (typeof window !== 'undefined') {
-       const handleResize = () => setWindowWidth(window.innerWidth);
-       window.addEventListener('resize', handleResize);
- 
-       // Cleanup function to remove the event listener
-       return () => window.removeEventListener('resize', handleResize);
-     }
-  }, []);
  
  
   
   return (
-    <div className={`${windowWidth > 1000 ? "hidden" : "w-[100%] h-screen flex justify-center items-center bg-white max-lg:h-auto"}`}>
+    <div className="w-[100%] h-screen hidden max-lg:flex justify-center items-center bg-white ">
       <div className=" flex-1  max-w-[80%] flex justify-center items-center text-txt max-lg:flex-col-reverse max-lg:mt-[6%]  max-lg:max-w-full  ">
         <motion.div
           initial={{ opacity: 0, x: -100 }} // Start from the left with some opacity
