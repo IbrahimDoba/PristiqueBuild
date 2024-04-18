@@ -89,3 +89,22 @@
   transform: translateX(-100%);
   transition: transform 500ms ease-in-out;
 }
+
+
+.hide-on-small {
+  display: none;
+ }
+ 
+ .show-on-small {
+  display: block;
+ }
+ 
+ @media (min-width: 1001px) {
+  .hide-on-small {
+     display: block;
+  }
+  .show-on-small {
+     display: none;
+  }
+ }
+ 

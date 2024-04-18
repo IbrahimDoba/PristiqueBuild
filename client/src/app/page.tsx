@@ -13,7 +13,7 @@ export default function Home() {
       <div className=" bg-bg  flex flex-col justify-center items-center overflow-x-hidden">
         {/* <Navbar /> */}
         <VideoBgSection />
-        {/* <Hero /> */}
+        <Hero />
         <CoreValues />
         <FutureDesigns />
         <SliderPage /> {/* // our services */}

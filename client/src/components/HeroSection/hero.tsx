@@ -1,20 +1,34 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../../../assets/logo2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
-
 const Hero = () => {
+  const [windowWidth, setWindowWidth] = useState(1100); // Initialize with a default value
+
+  useEffect(() => {
+     // Check if window is defined (i.e., we're in the browser)
+     if (typeof window !== 'undefined') {
+       const handleResize = () => setWindowWidth(window.innerWidth);
+       window.addEventListener('resize', handleResize);
+ 
+       // Cleanup function to remove the event listener
+       return () => window.removeEventListener('resize', handleResize);
+     }
+  }, []);
+ 
+ 
+  
   return (
-    <div className="  w-[100%] h-screen flex justify-center items-center bg-white max-lg:h-auto">
-      <div className=" flex-1  max-w-[80%] flex justify-center items-center text-txt max-lg:flex-col-reverse max-lg:mt-[6%]  max-lg:max-w-full ">
+    <div className={`${windowWidth > 1000 ? "hidden" : "w-[100%] h-screen flex justify-center items-center bg-white max-lg:h-auto"}`}>
+      <div className=" flex-1  max-w-[80%] flex justify-center items-center text-txt max-lg:flex-col-reverse max-lg:mt-[6%]  max-lg:max-w-full  ">
         <motion.div
           initial={{ opacity: 0, x: -100 }} // Start from the left with some opacity
           animate={{ opacity: 1, x: 0 }} // Animate to full opacity and center
           transition={{ duration: 0.5 }} // Duration of the animation
           className="flex  flex-1 flex-col  items-start mb-8 max-lg:mb-1 max-lg:p-3 max-lg:items-start max-lg:justify-center max-lg:pl-[15%]    "
         >
-          <h1 className=" w-[90%] text-6xl text-start mb-8 max-lg:text-5xl max-lg:text-center max-md:text-start max-md:w-[70%] max-md:text-3xl max-md:font-bold">
+          <h1 className=" w-[90%] text-6xl text-start mb-8 max-lg:text-5xl max-lg:text-center max-md:text-start max-md:text-2xl max-md:font-bold max-md:w-full">
             Building {"Nigeria's"} future, One module at a time.{" "}
           </h1>
           <p className=" text-lg leading-loose mb-8 text-start w-[80%] max-lg:text-sm  ">
