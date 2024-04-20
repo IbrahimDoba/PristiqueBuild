@@ -35,7 +35,7 @@ const Hero = () => {
           All Our Projects are done by Experts
         </span> */}
         </motion.div>
-        <div className="flex justify-center items-center flex-col flex-1  max-lg:w-[40%] max-lg:mb-10">
+        <div className="flex justify-center items-center flex-col flex-1  max-lg:w-[70%] max-lg:mb-10">
           <Image
             className=" rounded-3xl max-lg:border-sec"
             src={img1}
