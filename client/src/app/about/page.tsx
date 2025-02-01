@@ -21,8 +21,15 @@ import {
 } from "./reuseComps";
 import { motion } from "framer-motion";
 import CoreValues from "@/components/CoreValues/CoreValues";
+import { Metadata } from "next";
 
 const About = () => {
+
+ const metadata: Metadata = {
+    title: "About Pristiq Build",
+    description: "Learn more about PristiqBuild. Build Smart. Build Modular.",
+  };
+
   return (
     <main className="overflow-x-hidden">
       <section className="about text-black mx-auto min-h-[85vh] grid place-content-center text-center bg-altBg bg-fixed ">

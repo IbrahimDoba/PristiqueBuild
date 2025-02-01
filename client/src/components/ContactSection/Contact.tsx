@@ -28,7 +28,7 @@ const ContactSection = () => {
 
     emailjs
       .sendForm("service_a4o6xzq", "template_joqbe4r", form.current, {
-        publicKey: "SZEd3ULfyUhPuRy7G",
+        publicKey: process.env.EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -37,7 +37,8 @@ const ContactSection = () => {
           form.current.reset();
         },
         (error) => {
-          setModalMessage(`Failed to send email: ${error.text}`);
+          console.log(error)
+          setModalMessage(`Failed to send email`);
           setShowModal(true);
         }
       );

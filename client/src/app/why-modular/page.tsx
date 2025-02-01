@@ -166,14 +166,11 @@ function WhyModular() {
           Benefits Of Modular Construction
         </h1>
         <div className="w-[80%] justify-center items-center flex flex-wrap">
-          {modularData.map((data, index) => (
-            <ModularCard
-              id={data.id}
-              title={data.title}
-              text={data.text}
-              key={index}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {modularData.map((item) => (
+            <ModularCard key={item.id} {...item} />
           ))}
+        </div>
         </div>
       </section>
       <section className="w-full justify-center items-center flex-col flex my-[5%] bg-bg">

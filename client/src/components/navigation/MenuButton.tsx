@@ -30,7 +30,7 @@ const MenuButton = ({ isOpen, toggleMenu }: Menu) => {
     <button
       type='button'
       onClick={toggleMenu}
-      className='md:hidden flex flex-col justify-center gap-1 z-50 outline-2 outline-offset-2 bg-acc p-1 rounded-sm h-7'
+      className='md:hidden flex   flex-col justify-center gap-1 z-50 outline-2 outline-offset-2 bg-acc p-1 rounded-sm h-7'
     >
       <span className='sr-only'>Mobile menu toggle</span>
       <span

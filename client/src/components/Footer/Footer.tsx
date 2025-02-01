@@ -13,7 +13,7 @@ const Footer = () => {
           <Link href='#'>
             <Image src={logo} alt='logo' className='max-w-[150px]' />
           </Link>
-          <p className='text-sm max-lg:hidden'>&#169; PristiqBuild 2024</p>
+          <p className='text-sm max-lg:hidden'>&#169; PristiqBuild 2025</p>
         </div>
         <div>
           <p className='font-semibold lg:text-xl mb-2 lg:mb-4'>Our Builds</p>
