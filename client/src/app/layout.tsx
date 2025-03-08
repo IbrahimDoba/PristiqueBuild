@@ -4,6 +4,7 @@ import { Poppins, Rubik, Space_Grotesk, Source_Sans_3 } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/navigation/navbar";
 import { siteConfig } from "@/lib/siteConfig";
+import { Analytics } from "@vercel/analytics/react"
 
 // components
 const rubik = Rubik({ subsets: ["latin"] });
@@ -57,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sourcesans.className}>
+      <Analytics/>
         <Navbar />
         {children}
         <Footer />
