@@ -17,6 +17,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    height: 100%; /* Added for sticky footer */
+  }
+  body {
+    min-height: 100vh; /* Added for sticky footer */
+    display: flex; /* Added for sticky footer */
+    flex-direction: column; /* Added for sticky footer */
   }
   ::-webkit-scrollbar {
     width: 0.75rem;
@@ -88,6 +94,14 @@
 }
 
 @layer utilities {
+  /* Sticky footer utility classes */
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  /* Existing utilities */
   .no-scroll {
     overflow: hidden;
   }
@@ -169,4 +183,3 @@
     @apply bg-background text-foreground;
   }
 }
- 

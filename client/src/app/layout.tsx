@@ -56,11 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={sourcesans.className}>
-      <Analytics/>
+    <html lang="en" className="h-full">
+      <body className={`${sourcesans.className} flex flex-col min-h-screen`}>
+        <Analytics/>
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -72,6 +72,7 @@ const Navbar = () => {
               isOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'
             }`}
           >
+           
             <li className='dropdown-container relative'>
               <button
                 onClick={() => {
@@ -117,6 +118,14 @@ const Navbar = () => {
                 className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
               >
                 Projects
+              </Link>
+            </li>
+            <li className='hover:text-pri transition duration-300'>
+              <Link
+                href='/blogs'
+                className='outline-2 focus-visible:outline-pri tracking-widest uppercase text-sm max-md:text-white font-medium'
+              >
+                Blogs
               </Link>
             </li>
             <li className='hover:text-pri transition duration-300'>
