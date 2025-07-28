@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Design = ({ title, image, text }: PropsType) => {
   return (
-    <div className="flex flex-col justify-between items-start w-[350px]  h-auto max-md:w-auto">
+    <div className="flex flex-col justify-between items-start w-[250px]  h-auto max-md:w-auto">
       <div className="w-full h-[300px] ">
         <Image
           src={image}

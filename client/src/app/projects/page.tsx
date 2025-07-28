@@ -17,6 +17,13 @@ function Projects() {
       image: "/breeze-point/breeze2.jpg",
       link: "/projects/breeze-point"
     },
+    {
+      id: 3,
+      title: "Opulence Heights – Smart Steel Residential Estate",
+      description: "Opulence Heights is a revolutionary smart-living estate located in the elevated terrain of Dawaki Hillside, Abuja. Developed through a joint venture between EFAB Properties and PristiqBuild, this project introduces Nigeria's first precision-built steel-frame homes with global standards in energy efficiency, automation, and infrastructure.",
+      image: "https://koz5ylkurb.ufs.sh/f/VdVJXQsMkbnqNt0iHcaLhTQa8iMKv3Rpwz6B7txOPZ0bWC9J",
+      link: "/projects/opulence-heights"
+    },
   ];
 
   return (
