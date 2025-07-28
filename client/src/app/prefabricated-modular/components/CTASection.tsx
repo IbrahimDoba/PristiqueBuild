@@ -123,7 +123,7 @@ const CTASection = () => {
                   Project Inquiry Form
                 </h3>
                 <p className="text-white/80 mb-6">
-                  Tell us about your project and we'll get back to you within 24 hours
+                  Tell us about your project and we&apos;ll get back to you within 24 hours
                 </p>
                 
                 <div className="space-y-4">
@@ -160,7 +160,7 @@ const CTASection = () => {
           >
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-4">
-                Don't Wait - Start Building Tomorrow Today
+                Don&apos;t Wait - Start Building Tomorrow Today
               </h3>
               <p className="text-lg text-white/90 mb-6">
                 Join hundreds of satisfied clients who have transformed their construction projects with modular solutions

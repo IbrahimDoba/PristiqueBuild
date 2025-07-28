@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { PenTool, Factory, Wrench, LucideIcon } from 'lucide-react';
+import Image from 'next/image';
 
 interface ProcessStep {
   icon: LucideIcon;
@@ -85,9 +86,11 @@ const ProcessOverview = () => {
                 {/* Process Image */}
                 <div className="flex-1">
                   <div className="bg-white rounded-2xl p-6 shadow-lg">
-                    <img 
+                    <Image 
                       src={`/lgs/lgs${index + 3}.jpeg`}
                       alt={step.title}
+                      width={500}
+                      height={300}
                       className="w-full h-64 object-cover rounded-xl"
                     />
                   </div>

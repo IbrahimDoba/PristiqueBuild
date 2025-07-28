@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Factory, Clock, Shield, Zap } from "lucide-react";
+import Image from "next/image";
 
 const ServiceOverview = () => {
   const highlights = [
@@ -86,11 +87,12 @@ const ServiceOverview = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <img
+              <div className="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center relative">
+                <Image
                   src="/lgs/lgs2.jpeg"
                   alt="Modular Construction Factory"
-                  className="w-full h-full object-cover rounded-xl"
+                  fill
+                  className="object-cover rounded-xl"
                 />
               </div>
             </motion.div>

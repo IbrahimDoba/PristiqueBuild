@@ -1,15 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/lgs/lgs1.jpeg"
           alt="Modular Construction"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>

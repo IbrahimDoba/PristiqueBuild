@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Users, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -80,9 +81,11 @@ const CaseStudies = () => {
                 {/* Image */}
                 <div className="flex-1">
                   <div className="relative group">
-                    <img 
+                    <Image
                       src={study.image}
                       alt={study.title}
+                      width={600}
+                      height={400}
                       className="w-full h-96 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-primary/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -162,21 +165,21 @@ const CaseStudies = () => {
               <div className="text-center">
                 <div className="text-4xl mb-4">⭐</div>
                 <p className="text-lg mb-4">
-                  "PristiqBuild delivered our office complex ahead of schedule and under budget. The quality exceeded our expectations."
+                  &ldquo;PristiqBuild delivered our office complex ahead of schedule and under budget. The quality exceeded our expectations.&rdquo;
                 </p>
                 <div className="font-semibold">- TechCorp Nigeria CEO</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">⭐</div>
                 <p className="text-lg mb-4">
-                  "The modular approach saved us months of construction time and significantly reduced costs. Highly recommended!"
+                  &ldquo;The modular approach saved us months of construction time and significantly reduced costs. Highly recommended!&rdquo;
                 </p>
                 <div className="font-semibold">- GreenHomes Properties</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">⭐</div>
                 <p className="text-lg mb-4">
-                  "Exceptional quality and professional service. Our industrial facility was completed flawlessly."
+                  &ldquo;Exceptional quality and professional service. Our industrial facility was completed flawlessly.&rdquo;
                 </p>
                 <div className="font-semibold">- PetroTech Industries</div>
               </div>
