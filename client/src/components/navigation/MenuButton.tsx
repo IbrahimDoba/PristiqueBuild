@@ -12,13 +12,6 @@ const MenuButton = ({ isOpen, toggleMenu }: Menu) => {
 
   useEffect(() => {
     if (isOpen) {
-      toggleMenu();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
-
-  useEffect(() => {
-    if (isOpen) {
       document.body.classList.add('no-scroll');
     } else {
       document.body.classList.remove('no-scroll');
@@ -30,7 +23,7 @@ const MenuButton = ({ isOpen, toggleMenu }: Menu) => {
     <button
       type='button'
       onClick={toggleMenu}
-      className='md:hidden flex   flex-col justify-center gap-1 z-50 outline-2 outline-offset-2 bg-acc p-1 rounded-sm h-7'
+      className='md:hidden flex flex-col justify-center gap-1 z-50 outline-2 outline-offset-2 bg-acc p-1 rounded-sm h-7'
     >
       <span className='sr-only'>Mobile menu toggle</span>
       <span
