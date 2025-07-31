@@ -125,7 +125,7 @@ const ContactSection = () => {
           <Image src={contact} width={700} alt="contact png" />
           <div className="flex flex-col w-[50%] items-start justify-start max-md:w-full">
             <p className="flex">
-              <CiLocationOn className="mr-3" size={30} /> wuse zone 5, Abuja
+              <CiLocationOn className="mr-3" size={30} /> First floor, Murjanatu House, 1 Zambezi Crescent, Wuse, Abuja.
             </p>
             <p className="my-3 flex">
               <IoCallOutline className="mr-3" size={30} />

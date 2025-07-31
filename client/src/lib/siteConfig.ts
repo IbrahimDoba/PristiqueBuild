@@ -70,7 +70,7 @@ export const siteConfig = {
     contact: {
       email: "info@pristiqbuild.com",
       phone: "+234 708 718 3815",
-      address: "Wuse Zone 5, PO 901001",
+      address: "First floor, Murjanatu House, 1 Zambezi Crescent, Wuse, Abuja.",
     },
     companyInfo: {
       founded: "2023",

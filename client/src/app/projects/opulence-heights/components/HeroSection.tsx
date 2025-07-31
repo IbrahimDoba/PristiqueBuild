@@ -1,6 +1,10 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Download, Calendar, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-estate.jpg";
+import { downloadOpulenceHeightsBrochure } from "@/lib/downloadUtils";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -30,24 +34,33 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <Button variant="default" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={downloadOpulenceHeightsBrochure}
+            >
               <Download className="w-5 h-5" />
               Download Brochure
             </Button>
 
-            <Button variant="default" size="lg" className="text-lg px-8 py-6">
-              <Calendar className="w-5 h-5" />
-              Book a Private Viewing
-            </Button>
+            <Link href="/contact">
+              <Button variant="default" size="lg" className="text-lg px-8 py-6">
+                <Calendar className="w-5 h-5" />
+                Book a Private Viewing
+              </Button>
+            </Link>
 
-            <Button
-              variant="destructive"
-              size="lg"
-              className="text-lg px-8 py-6 border-white text-white hover:bg-destructive/70 hover:text-luxury-dark"
-            >
-              <Phone className="w-5 h-5" />
-              Call Now
-            </Button>
+            <Link href="/contact">
+              <Button
+                variant="destructive"
+                size="lg"
+                className="text-lg px-8 py-6 border-white text-white hover:bg-destructive/70 hover:text-luxury-dark"
+              >
+                <Phone className="w-5 h-5" />
+                Call Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

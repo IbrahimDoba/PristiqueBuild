@@ -1,5 +1,8 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Download, DollarSign, Calendar, Gift } from "lucide-react";
+import { downloadOpulenceHeightsBrochure } from "@/lib/downloadUtils";
 
 const PricingSection = () => {
   return (
@@ -55,7 +58,12 @@ const PricingSection = () => {
             </ul>
           </div>
           
-          <Button variant="default" size="lg" className="text-lg px-8 py-6">
+          <Button 
+            variant="default" 
+            size="lg" 
+            className="text-lg px-8 py-6"
+            onClick={downloadOpulenceHeightsBrochure}
+          >
             <Download className="w-5 h-5" />
             Request Brochure & Payment Plan
           </Button>

@@ -1,35 +1,36 @@
 'use client';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { downloadModularBrochure } from '@/lib/downloadUtils';
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
-      question: "How much faster is modular construction compared to traditional methods?",
-      answer: "Modular construction typically reduces project timelines by 30-50%. While traditional construction takes 18-26 weeks, modular projects can be completed in 10-15 weeks. This is achieved through parallel manufacturing and site preparation, plus streamlined on-site assembly."
+      question: "What is modular construction?",
+      answer: "Modular construction is a building method where structures are built in sections (modules) in a controlled factory environment, then transported to the construction site for assembly. This approach offers faster construction times, better quality control, and reduced waste compared to traditional building methods."
     },
     {
-      question: "What types of buildings can be constructed using modular methods?",
-      answer: "Modular construction is suitable for virtually any building type including residential homes, office buildings, hotels, schools, hospitals, and industrial facilities. We specialize in projects ranging from single-family homes to multi-story commercial complexes and specialized industrial facilities."
+      question: "How long does modular construction take?",
+      answer: "Modular construction typically reduces project timelines by 30-50% compared to traditional construction. While site preparation happens simultaneously with module fabrication, the actual assembly on-site can be completed in days or weeks rather than months."
     },
     {
-      question: "How does the quality of modular buildings compare to traditional construction?",
-      answer: "Modular buildings often exceed traditional construction quality due to factory-controlled environments, precision manufacturing, and rigorous quality control processes. Components are built to exact specifications with consistent materials and finishes, resulting in superior structural integrity and finish quality."
+      question: "Is modular construction as durable as traditional construction?",
+      answer: "Yes, modular buildings are built to the same or higher standards as traditional construction. They must meet all local building codes and can be designed to withstand the same environmental conditions. Many modular buildings are actually more durable due to the controlled factory environment and precise engineering."
     },
     {
-      question: "Are modular buildings more expensive than traditional construction?",
-      answer: "Modular construction typically costs 10-30% less than traditional methods due to reduced labor costs, minimized waste, optimized material usage, and faster completion times. The controlled factory environment also reduces weather-related delays and material damage."
+      question: "Can modular buildings be customized?",
+      answer: "Absolutely! Modular construction offers extensive customization options. From floor plans and finishes to exterior designs and interior layouts, modular buildings can be tailored to meet specific requirements and aesthetic preferences."
     },
     {
-      question: "Can modular buildings be customized to specific design requirements?",
-      answer: "Absolutely! Modular construction offers extensive customization options. We can accommodate custom floor plans, architectural styles, interior finishes, and specialized features. Our design team works closely with clients to create unique solutions that meet their specific needs and preferences."
+      question: "What are the cost benefits of modular construction?",
+      answer: "Modular construction typically offers 10-20% cost savings compared to traditional construction due to reduced labor costs, faster completion times, less material waste, and better quality control. Additionally, earlier occupancy can generate revenue sooner."
     },
     {
-      question: "What are the environmental benefits of modular construction?",
-      answer: "Modular construction is significantly more environmentally friendly than traditional methods. It produces up to 90% less construction waste, uses energy-efficient materials, reduces carbon footprint through shorter construction times, and often incorporates sustainable design features. Many of our projects achieve LEED certification."
+      question: "Are modular buildings energy efficient?",
+      answer: "Yes, modular buildings can be highly energy efficient. The controlled factory environment allows for precise installation of insulation, windows, and HVAC systems. Many modular buildings exceed energy efficiency standards and can be designed to achieve LEED certification."
     }
   ];
 
@@ -119,7 +120,10 @@ const FAQSection = () => {
               <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-colors duration-300">
                 Schedule a Consultation
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+              <button 
+                className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+                onClick={downloadModularBrochure}
+              >
                 Download Brochure
               </button>
             </div>
