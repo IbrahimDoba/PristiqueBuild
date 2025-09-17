@@ -9,7 +9,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { PageContainer } from "./page-container";
@@ -92,7 +91,7 @@ const Navbar = () => {
                       <NavigationMenuContent>
                         <ul className={cn("grid gap-1")}>
                           {link.items.map((item) => (
-                            <li className="w-full">
+                            <li className="w-full" key={item.title}>
                               <Link
                                 href={item.href}
                                 className={cn(
@@ -110,7 +109,7 @@ const Navbar = () => {
                   ) : (
                     <NavigationMenuLink asChild>
                       <Link
-                        href={link.href!}
+                        href={link.href}
                         className={cn(buttonVariants({ variant: "ghost" }))}
                       >
                         {link.title}
@@ -169,7 +168,7 @@ const Navbar = () => {
                         ))}
                       </MobileDropdown>
                     ) : (
-                      <MobileLink href={link.href!} onNavigate={toggleMenu}>
+                      <MobileLink href={link.href} onNavigate={toggleMenu}>
                         {link.title}
                       </MobileLink>
                     )}
@@ -179,7 +178,7 @@ const Navbar = () => {
                   <Link
                     href="/contact"
                     onClick={toggleMenu}
-                    className="from-acc to-acc/90 hover:border-acc hover:text-primary block rounded-lg border-2 border-transparent bg-gradient-to-r p-3 px-6 text-center text-sm font-medium tracking-widest text-white uppercase shadow-lg outline-2 transition-all duration-300 hover:bg-transparent hover:shadow-xl"
+                    className={cn(buttonVariants({ variant: "default" }))}
                   >
                     Contact
                   </Link>
@@ -222,6 +221,7 @@ const MobileDropdown = ({
   return (
     <div className="dropdown-container">
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-medium tracking-widest text-white uppercase transition duration-300 hover:bg-white/10"
       >
