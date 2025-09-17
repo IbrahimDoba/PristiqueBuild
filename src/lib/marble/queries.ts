@@ -25,6 +25,7 @@ export async function getPosts() {
 export async function getTags() {
   try {
     const raw = await fetch(`${url}/${key}/tags`, {
+      cache: "force-cache",
       next: { tags: ["tags"] },
     });
     const data: MarbleTagList = await raw.json();
@@ -50,6 +51,7 @@ export async function getSinglePost(slug: string) {
 export async function getCategories() {
   try {
     const raw = await fetch(`${url}/${key}/categories`, {
+      cache: "force-cache",
       next: { tags: ["categories"] },
     });
     const data: MarbleCategoryList = await raw.json();
@@ -75,6 +77,7 @@ export async function getPostsByCategory(slug: string) {
 export async function getAuthors() {
   try {
     const raw = await fetch(`${url}/${key}/authors`, {
+      cache: "force-cache",
       next: { tags: ["authors"] },
     });
     const data: MarbleAuthorList = await raw.json();
