@@ -49,6 +49,7 @@ const About = () => {
             whileInView="show"
             exit="hide"
             variants={introLeftVariants}
+            transition={{ duration: 1 }}
           >
             {" "}
             <Image src={img1} alt="men mount" />
@@ -74,6 +75,7 @@ const About = () => {
             whileInView="show"
             exit="hide"
             variants={introRightVariants}
+            transition={{ duration: 1 }}
           >
             <Image src={img6} alt="men mount" />
           </motion.div>
@@ -98,6 +100,7 @@ const About = () => {
             whileInView="show"
             exit="hide"
             variants={introLeftVariants}
+            transition={{ duration: 1 }}
           >
             <Image src={img7} alt="men mount" />
           </motion.div>
@@ -123,6 +126,7 @@ const About = () => {
           whileInView="show"
           exit="hide"
           variants={introBottomVariants}
+          transition={{ duration: 1 }}
         >
           <CoreValues />
         </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -63,14 +64,18 @@ const CTASection = () => {
               </div>
 
               <div className="space-y-4">
-                <button className="flex w-full transform items-center justify-center gap-3 rounded-lg bg-yellow-500 px-8 py-4 text-xl font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
-                  Start Your Modular Project
-                  <ArrowRight className="h-6 w-6" />
-                </button>
+                <Link href="/contact">
+                  <button className="flex w-full transform items-center justify-center gap-3 rounded-lg bg-yellow-500 px-8 py-4 text-xl font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
+                    Start Your Modular Project
+                    <ArrowRight className="h-6 w-6" />
+                  </button>
+                </Link>
 
-                <button className="hover:text-primary w-full rounded-lg border-2 border-white px-8 py-4 text-xl font-bold text-white transition-all duration-300 hover:bg-white">
-                  Request Free Consultation
-                </button>
+                <Link href="/contact">
+                  <button className="hover:text-primary w-full rounded-lg border-2 border-white px-8 py-4 text-xl font-bold text-white transition-all duration-300 hover:bg-white">
+                    Request Free Consultation
+                  </button>
+                </Link>
               </div>
             </motion.div>
 
@@ -92,7 +97,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Call Us</p>
-                      <p className="text-white/80">+234 801 234 5678</p>
+                      <p className="text-white/80">+234 708 718 3815</p>
                     </div>
                   </div>
 
@@ -112,7 +117,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Visit Us</p>
-                      <p className="text-white/80">Lagos, Nigeria</p>
+                      <p className="text-white/80">First floor, Murjanatu House, 1 Zambezi Crescent, Wuse, Abuja</p>
                     </div>
                   </div>
                 </div>
@@ -143,9 +148,11 @@ const CTASection = () => {
                     rows={4}
                     className="w-full resize-none rounded-lg border border-white/30 bg-white/20 px-4 py-3 text-white placeholder-white/60 focus:border-yellow-500 focus:outline-none"
                   ></textarea>
-                  <button className="w-full rounded-lg bg-yellow-500 px-6 py-3 font-bold text-black transition-colors duration-300 hover:bg-yellow-600">
-                    Send Message
-                  </button>
+                  <Link href="/contact">
+                    <button className="w-full rounded-lg bg-yellow-500 px-6 py-3 font-bold text-black transition-colors duration-300 hover:bg-yellow-600">
+                      Send Message
+                    </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -168,12 +175,16 @@ const CTASection = () => {
                 construction projects with modular solutions
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                <button className="transform rounded-lg bg-yellow-500 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
-                  Get Started Now
-                </button>
-                <button className="hover:text-primary rounded-lg border-2 border-white px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-white">
-                  View Our Portfolio
-                </button>
+                <Link href="/contact">
+                  <button className="transform rounded-lg bg-yellow-500 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
+                    Get Started Now
+                  </button>
+                </Link>
+                <Link href="/projects">
+                  <button className="hover:text-primary rounded-lg border-2 border-white px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-white">
+                    View Our Portfolio
+                  </button>
+                </Link>
               </div>
             </div>
           </motion.div>

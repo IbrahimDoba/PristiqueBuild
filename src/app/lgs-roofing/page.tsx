@@ -23,17 +23,17 @@ import Link from "next/link";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  visible: { opacity: 1, y: 0 },
 };
 
 const slideIn = {
   hidden: { x: -50, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  visible: { x: 0, opacity: 1 },
 };
 
 const zoomIn = {
   hidden: { scale: 0.8, opacity: 0 },
-  visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
+  visible: { scale: 1, opacity: 1 },
 };
 
 export default function LGSRoofingContent() {
@@ -54,6 +54,7 @@ export default function LGSRoofingContent() {
             initial="hidden"
             animate="visible"
             variants={fadeIn}
+            transition={{ duration: 0.6 }}
             className="text-center text-4xl font-bold text-gray-800 md:text-5xl"
           >
             LGS Roofing Solutions
@@ -66,6 +67,7 @@ export default function LGSRoofingContent() {
           initial="hidden"
           animate="visible"
           variants={fadeIn}
+          transition={{ duration: 0.6 }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
           <div className="relative mb-8 overflow-hidden rounded-xl shadow-2xl">
@@ -94,6 +96,7 @@ export default function LGSRoofingContent() {
           initial="hidden"
           animate={controls}
           variants={slideIn}
+          transition={{ duration: 0.5 }}
           className="mb-16"
         >
           <h2 className="mb-8 text-center text-3xl font-bold">
@@ -150,6 +153,7 @@ export default function LGSRoofingContent() {
           initial="hidden"
           animate="visible"
           variants={zoomIn}
+          transition={{ duration: 0.5 }}
           className="mb-16"
         >
           <h2 className="mb-8 text-center text-3xl font-bold">
@@ -285,6 +289,7 @@ export default function LGSRoofingContent() {
           initial="hidden"
           animate="visible"
           variants={slideIn}
+          transition={{ duration: 0.5 }}
           className="mb-16"
         >
           <h2 className="mb-8 text-center text-3xl font-bold">
@@ -385,6 +390,7 @@ export default function LGSRoofingContent() {
           initial="hidden"
           animate="visible"
           variants={fadeIn}
+          transition={{ duration: 0.6 }}
           className="rounded-xl bg-white/90 p-12 text-center shadow-lg backdrop-blur-sm"
         >
           <h2 className="mb-6 text-3xl font-bold">

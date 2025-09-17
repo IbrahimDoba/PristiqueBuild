@@ -47,10 +47,6 @@ const SectionsPage = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -172,7 +168,11 @@ const SectionsPage = () => {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                transition={{ delay: index * 0.1 }}
+                transition={{
+                  delay: index * 0.1,
+                  duration: 0.6,
+                  ease: "easeOut",
+                }}
                 className="group"
               >
                 <motion.div

@@ -64,10 +64,6 @@ const FutureDesigns = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -81,52 +77,48 @@ const FutureDesigns = () => {
       opacity: 1,
       scale: 1,
       rotateY: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
     },
   };
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-amber-50 py-20 px-4 relative overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-50 via-orange-50 to-amber-50 px-4 py-20">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-yellow-200/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-0 left-0 h-96 w-96 animate-pulse rounded-full bg-orange-200/20 blur-3xl" />
+        <div className="absolute right-0 bottom-0 h-96 w-96 animate-pulse rounded-full bg-amber-200/20 blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 transform animate-pulse rounded-full bg-yellow-200/10 blur-2xl delay-500" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="relative z-10 mx-auto max-w-7xl">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-orange-100/80 backdrop-blur-sm rounded-full border border-orange-200"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-100/80 px-4 py-2 backdrop-blur-sm"
           >
-            <Sparkles className="w-5 h-5 text-orange-600" />
-            <span className="text-orange-600 text-sm font-medium">
+            <Sparkles className="h-5 w-5 text-orange-600" />
+            <span className="text-sm font-medium text-orange-600">
               FUTURISTIC INNOVATION
             </span>
           </motion.div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="mb-6 text-5xl font-bold text-gray-900 md:text-6xl lg:text-7xl">
             Experience the
             <span className="block bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
               Future of Design
             </span>
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-600">
             Step into tomorrow with our cutting-edge technologies and innovative
             approaches that are revolutionizing the construction industry.
           </p>
@@ -144,12 +136,14 @@ const FutureDesigns = () => {
             <motion.div
               key={feature.title}
               variants={itemVariants}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className={`flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-12 lg:gap-16`}
             >
               {/* Image Section */}
               <motion.div
                 variants={imageVariants}
-                className="flex-1 relative group"
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="group relative flex-1"
               >
                 <div className="relative overflow-hidden rounded-2xl">
                   <Image
@@ -157,20 +151,20 @@ const FutureDesigns = () => {
                     alt={feature.title}
                     width={600}
                     height={400}
-                    className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="h-[400px] w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   {/* Play Button */}
                   <motion.div
                     initial={{ scale: 0 }}
                     whileHover={{ scale: 1.1 }}
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                   >
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                      <Play className="w-8 h-8 text-white ml-1" />
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/30 bg-white/20 backdrop-blur-sm">
+                      <Play className="ml-1 h-8 w-8 text-white" />
                     </div>
                   </motion.div>
                 </div>
@@ -186,7 +180,7 @@ const FutureDesigns = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-orange-400 to-red-400 rounded-full opacity-80"
+                  className="absolute -top-4 -right-4 h-8 w-8 rounded-full bg-gradient-to-r from-orange-400 to-red-400 opacity-80"
                 />
                 <motion.div
                   animate={{
@@ -199,7 +193,7 @@ const FutureDesigns = () => {
                     ease: "easeInOut",
                     delay: 1,
                   }}
-                  className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full opacity-60"
+                  className="absolute -bottom-4 -left-4 h-6 w-6 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 opacity-60"
                 />
               </motion.div>
 
@@ -213,15 +207,15 @@ const FutureDesigns = () => {
                   className="flex items-center gap-4"
                 >
                   <div
-                    className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center shadow-lg`}
+                    className={`h-16 w-16 bg-gradient-to-r ${feature.color} flex items-center justify-center rounded-2xl shadow-lg`}
                   >
-                    <feature.icon className="w-8 h-8 text-white" />
+                    <feature.icon className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                    <h3 className="mb-2 text-3xl font-bold text-gray-900 md:text-4xl">
                       {feature.title}
                     </h3>
-                    <p className="text-orange-600 font-medium">
+                    <p className="font-medium text-orange-600">
                       {feature.subtitle}
                     </p>
                   </div>
@@ -232,7 +226,7 @@ const FutureDesigns = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   viewport={{ once: true }}
-                  className="text-lg text-gray-700 leading-relaxed"
+                  className="text-lg leading-relaxed text-gray-700"
                 >
                   {feature.description}
                 </motion.p>
@@ -246,10 +240,10 @@ const FutureDesigns = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
+                    className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-6 py-3 font-semibold text-white transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25"
                   >
                     <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </motion.button>
                 </motion.div>
               </div>
@@ -263,23 +257,23 @@ const FutureDesigns = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mt-20"
+          className="mt-20 text-center"
         >
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="inline-block p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-orange-200 shadow-lg"
+            className="inline-block rounded-2xl border border-orange-200 bg-white/80 p-8 shadow-lg backdrop-blur-sm"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="mb-4 text-2xl font-bold text-gray-900">
               Ready to Experience the Future?
             </h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            <p className="mx-auto mb-6 max-w-2xl text-gray-600">
               Book a consultation and discover how our innovative technologies
               can transform your vision into reality.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full text-white font-semibold hover:shadow-xl hover:shadow-orange-500/25 transition-all duration-300"
+              className="rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-8 py-4 font-semibold text-white transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/25"
             >
               Schedule Consultation
             </motion.button>

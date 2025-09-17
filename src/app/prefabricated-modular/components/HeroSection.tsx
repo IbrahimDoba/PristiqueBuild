@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -45,9 +46,11 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="transform rounded-lg bg-yellow-500 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
-            Explore Our Solutions
-          </button>
+          <Link href="/contact">
+            <button className="transform rounded-lg bg-yellow-500 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-yellow-600">
+              Explore Our Solutions
+            </button>
+          </Link>
         </motion.div>
       </div>
 

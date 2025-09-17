@@ -8,9 +8,6 @@ export const introLeftVariants = {
   show: {
     opacity: 1,
     x: 0,
-    transition: {
-      duration: 1,
-    },
   },
 };
 export const introRightVariants = {
@@ -21,9 +18,6 @@ export const introRightVariants = {
   show: {
     opacity: 1,
     x: 0,
-    transition: {
-      duration: 1,
-    },
   },
 };
 export const introBottomVariants = {
@@ -34,9 +28,6 @@ export const introBottomVariants = {
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 1,
-    },
   },
 };
 export const introTopVariants = {
@@ -47,9 +38,6 @@ export const introTopVariants = {
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 1,
-    },
   },
 };
 export function CardSection() {
@@ -62,6 +50,7 @@ export function CardSection() {
           whileInView="show"
           exit="hide"
           variants={introLeftVariants}
+          transition={{ duration: 1 }}
         >
           <h3 className="text-3xl font-semibold">Careers Link</h3>
           <p className="my-4">
@@ -80,6 +69,7 @@ export function CardSection() {
           whileInView="show"
           exit="hide"
           variants={introRightVariants}
+          transition={{ duration: 1 }}
         >
           <h3 className="text-3xl font-semibold">Make Inquiries</h3>
           <p className="my-4">

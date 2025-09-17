@@ -14,9 +14,9 @@ export function verifySignature(
     .update(bodyText)
     .digest("hex");
 
-  // Convert to buffers for constant-time compare
-  const expected = Buffer.from(expectedHex, "hex");
-  const computed = Buffer.from(computedHex, "hex");
+  // Convert to Uint8Array for constant-time compare
+  const expected = new Uint8Array(Buffer.from(expectedHex, "hex"));
+  const computed = new Uint8Array(Buffer.from(computedHex, "hex"));
 
   // lengths must match for timingSafeEqual
   if (expected.length !== computed.length) return false;

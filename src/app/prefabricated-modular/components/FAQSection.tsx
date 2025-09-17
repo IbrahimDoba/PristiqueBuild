@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { downloadModularBrochure } from "@/lib/downloadUtils";
+import Link from "next/link";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -124,9 +125,11 @@ const FAQSection = () => {
               construction can benefit your project
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <button className="rounded-lg bg-yellow-500 px-6 py-3 font-bold text-black transition-colors duration-300 hover:bg-yellow-600">
-                Schedule a Consultation
-              </button>
+              <Link href="/contact">
+                <button className="rounded-lg bg-yellow-500 px-6 py-3 font-bold text-black transition-colors duration-300 hover:bg-yellow-600">
+                  Schedule a Consultation
+                </button>
+              </Link>
               <button
                 className="hover:text-primary rounded-lg border-2 border-white px-6 py-3 font-bold text-white transition-colors duration-300 hover:bg-white"
                 onClick={downloadModularBrochure}

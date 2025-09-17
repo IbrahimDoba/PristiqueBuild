@@ -65,10 +65,6 @@ const CoreValues = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -80,10 +76,6 @@ const CoreValues = () => {
     visible: {
       scale: 1,
       rotate: 0,
-      transition: {
-        duration: 0.5,
-        ease: "backOut",
-      },
     },
   };
 
@@ -138,6 +130,7 @@ const CoreValues = () => {
             <motion.div
               key={index}
               variants={cardVariants}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{
                 y: -10,
                 transition: { duration: 0.3 },
@@ -160,6 +153,7 @@ const CoreValues = () => {
                 {/* Icon */}
                 <motion.div
                   variants={iconVariants}
+                  transition={{ duration: 0.5, ease: "backOut" }}
                   className={`h-16 w-16 bg-gradient-to-br ${value.color} mb-6 flex items-center justify-center rounded-2xl transition-transform duration-300 group-hover:scale-110`}
                 >
                   <value.icon className="h-8 w-8 text-white" />

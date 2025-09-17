@@ -19,6 +19,7 @@ const ModularCard = ({ id, text, title, icon: Icon }: modularDProps) => {
       whileInView="show"
       exit="hide"
       variants={introBottomVariants}
+      transition={{ duration: 1 }}
     >
       <div className="flex items-center space-x-2">
         <Icon className="h-6 w-6" />

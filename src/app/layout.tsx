@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import { siteConfig } from "@/lib/siteConfig";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/layout/header";
-import Footer from "@/components/layout/Footer";
+import Footer from "@/components/layout/footer";
 
 const sourceSans = SourceSans({
   variable: "--font-source-sans",

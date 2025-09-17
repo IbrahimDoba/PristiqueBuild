@@ -18,6 +18,7 @@ const Aboutus = () => {
         whileInView="show"
         exit="hide"
         variants={introLeftVariants}
+        transition={{ duration: 1 }}
       >
         <Image src={meeting} alt="men mount" />
       </motion.div>
