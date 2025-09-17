@@ -41,7 +41,7 @@ function PostCard({ post }: PostCardProps) {
             </>
           )}
         </div>
-        <h2 className="mb-2 line-clamp-2 font-serif text-xl font-bold">
+        <h2 className="mb-2 line-clamp-2 text-xl">
           <Link href={link}>
             {post.title}
           </Link>
@@ -56,12 +56,12 @@ function PostCard({ post }: PostCardProps) {
             <Image
               src={post.authors[0].image}
               alt={post.authors[0].name}
-              width={40}
-              height={40}
+              width={32}
+              height={32}
               className="rounded-full"
             />
             <div>
-              <p className="font-semibold">{post.authors[0].name}</p>
+              <p className="font-medium">{post.authors[0].name}</p>
             </div>
           </div>
         )}

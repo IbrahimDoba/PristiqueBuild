@@ -87,7 +87,7 @@ async function Page({ params }: PageProps) {
     <Container className="min-h-[calc(100vh-100px)] py-14">
       <section className="mx-auto max-w-3xl space-y-6 lg:space-y-8">
         <div className="flex flex-col items-center gap-4">
-          <h1 className="text-center font-serif text-3xl lg:text-4xl">
+          <h1 className="text-center font-semibold text-3xl lg:text-4xl">
             {data.post.title}
           </h1>
           <time dateTime={data.post.publishedAt.toString()}>
