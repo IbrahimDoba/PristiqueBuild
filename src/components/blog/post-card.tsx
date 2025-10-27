@@ -1,4 +1,4 @@
-import { Post } from "@/lib/marble/types";
+import type { Post } from "@/lib/marble/types";
 import { Link } from "next-view-transitions";
 import Image from "next/image";
 
@@ -17,15 +17,17 @@ function PostCard({ post }: PostCardProps) {
 
   return (
     <li className="group flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white transition-all duration-300 hover:shadow-lg">
-      <Link href={link} className="relative block h-60 w-full overflow-hidden">
-        <Image
-          src={post.coverImage}
-          alt={post.title}
-          fill
-          loading="eager"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </Link>
+      {post.coverImage && (
+        <Link href={link} className="relative block h-60 w-full overflow-hidden">
+          <Image
+            src={post.coverImage}
+            alt={post.title}
+            fill
+            loading="eager"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </Link>
+      )}
 
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-4 flex items-center gap-2 text-sm text-gray-500">
@@ -51,15 +53,17 @@ function PostCard({ post }: PostCardProps) {
           {post.description}
         </p>
 
-        {post.authors && post.authors.length > 0 && (
+        {post.authors && post.authors.length > 0 && post.authors[0] && (
           <div className="flex items-center gap-3">
-            <Image
-              src={post.authors[0].image}
-              alt={post.authors[0].name}
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
+            {post.authors[0].image && (
+              <Image
+                src={post.authors[0].image}
+                alt={post.authors[0].name}
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+            )}
             <div>
               <p className="font-medium">{post.authors[0].name}</p>
             </div>
