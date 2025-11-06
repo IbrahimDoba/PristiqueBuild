@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
 
 function Projects() {
   const projects = [
@@ -21,8 +21,22 @@ function Projects() {
       id: 3,
       title: "Opulence Heights – Smart Steel Residential Estate",
       description: "Opulence Heights is a revolutionary smart-living estate located in the elevated terrain of Dawaki Hillside, Abuja. Developed through a joint venture between EFAB Properties and PristiqBuild, this project introduces Nigeria's first precision-built steel-frame homes with global standards in energy efficiency, automation, and infrastructure.",
-      image: "https://koz5ylkurb.ufs.sh/f/VdVJXQsMkbnqNt0iHcaLhTQa8iMKv3Rpwz6B7txOPZ0bWC9J",
+      image: "/opulence.png",
       link: "/projects/opulence-heights"
+    },
+    {
+      id: 4,
+      title: "Akure Light Gauge Steel Roofing Project",
+      description: "One of Pristiq Build's largest and most technically challenging roofing works, located in the serene heart of Ondo State. This massive castle-style residence and its adjoining boys' quarters feature a combined roof area exceeding 1,080 sqm, showcasing our expertise in large-scale Light Gauge Steel roofing solutions.",
+      image: "/osun/osun4.jpg",
+      link: "/projects/akure"
+    },
+    {
+      id: 5,
+      title: "Aso Grove Light Gauge Steel Roofing Project",
+      description: "A complete roof transformation in the prestigious Aso Grove Estate, Abuja. This project involved replacing an aging wooden truss system with a modern, precision-built Light Gauge Steel framework, delivering a solution that combines beauty, efficiency, and longevity for long-term performance.",
+      image: "/asogrove/aso2.JPG",
+      link: "/projects/aso-grove"
     },
   ];
 
@@ -42,13 +56,15 @@ function Projects() {
           {projects.map((project, index) => (
             <Link key={project.id} href={project.link} className="group">
               <div className="flex flex-col md:flex-row gap-8 w-full hover:bg-gray-50 p-4 rounded-lg transition-colors duration-300">
-                <div className="w-full md:w-2/5 h-[300px] relative rounded-lg overflow-hidden">
-                  <img 
+                <div className="w-full md:w-2/5 h-[300px] relative rounded-lg overflow-hidden bg-gray-200">
+                  <Image 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    priority={index === 0}
                   />
-                  <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-10 group-hover:bg-opacity-0 transition-all duration-300"></div>
                 </div>
                 <div className="w-full md:w-3/5 flex flex-col justify-center">
                   <h2 className="text-3xl font-bold mb-4 group-hover:text-blue-600 transition-colors duration-300">{project.title}</h2>

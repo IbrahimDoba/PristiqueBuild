@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.marblecms.com",
       },
+      {
+        protocol: "https",
+        hostname: "koz5ylkurb.ufs.sh",
+      },
     ],
   },
 };

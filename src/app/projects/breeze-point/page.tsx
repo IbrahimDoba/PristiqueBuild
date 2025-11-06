@@ -1,5 +1,50 @@
+import type { Metadata } from "next";
+import { siteConfig } from "@/lib/siteConfig";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Breeze Point Estate – Exclusive Living in F01, Kubwa, Abuja | Pristiq Build",
+  description: "Smart luxury living in F01, Kubwa, Abuja. 5 exquisitely built 4-bedroom terrace homes with LGS roofing system. 280 sqm living space per unit. Under construction by Pristiq Build.",
+  keywords: [
+    "Breeze Point Estate",
+    "luxury homes Kubwa Abuja",
+    "F01 district Abuja",
+    "4-bedroom terrace homes",
+    "LGS roofing system",
+    "Pristiq Build projects",
+    "luxury real estate Abuja",
+    "smart homes Nigeria",
+    "Kubwa residential estate",
+    "terrace homes Abuja",
+  ],
+  openGraph: {
+    type: "website",
+    title: "Breeze Point Estate – Exclusive Living in F01, Kubwa, Abuja",
+    description: "5 luxury 4-bedroom terrace homes in F01, Kubwa. Smart living with LGS roofing. 280 sqm per unit. Developed by Pristiq Build.",
+    url: `${siteConfig.url}/projects/breeze-point`,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/breeze-point/breeze3.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Breeze Point Estate – Exclusive Living in F01, Kubwa, Abuja",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Breeze Point Estate – Exclusive Living in F01, Kubwa",
+    description: "5 luxury 4-bedroom terrace homes with LGS roofing. Smart living in Kubwa's F01 district.",
+    images: [`${siteConfig.url}/breeze-point/breeze3.jpg`],
+    creator: siteConfig.links.twitter,
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/projects/breeze-point`,
+  },
+};
 
 export default function BreezePointEstatePage() {
   return (

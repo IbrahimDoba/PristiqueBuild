@@ -1,5 +1,50 @@
+import type { Metadata } from "next";
+import { siteConfig } from "@/lib/siteConfig";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Maitama Luxury Mansion – Colorado Street Roofing Project | Pristiq Build",
+  description: "Luxury mansion roofing project in Maitama, Abuja. Light Gauge Steel (LGS) truss system replacing timber. 18m x 16m roof completed in 4 days. EMBEE Grand Realty project.",
+  keywords: [
+    "Maitama roofing project",
+    "Colorado Street Abuja",
+    "Light Gauge Steel roofing",
+    "LGS truss system",
+    "luxury mansion roofing",
+    "EMBEE Grand Realty",
+    "roofing contractors Maitama",
+    "steel truss installation",
+    "Pristiq Build Maitama",
+    "residential roofing Abuja",
+  ],
+  openGraph: {
+    type: "website",
+    title: "Maitama Luxury Mansion – Colorado Street Roofing Project",
+    description: "LGS roofing for luxury mansion in Maitama. 18m x 16m roof completed in 4 days. 13 precision-engineered trusses.",
+    url: `${siteConfig.url}/projects/colorado`,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/roofs/roof04.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Maitama Luxury Mansion – Colorado Street Roofing Project",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maitama Luxury Mansion Roofing Project",
+    description: "LGS roofing completed in 4 days. 18m x 16m luxury mansion in Colorado Street, Maitama.",
+    images: [`${siteConfig.url}/roofs/roof04.jpg`],
+    creator: siteConfig.links.twitter,
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/projects/colorado`,
+  },
+};
 
 export default function MaitamaLuxuryPage() {
   return (
